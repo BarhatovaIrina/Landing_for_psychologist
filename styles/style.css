@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "lato-Regular";
+  src: url("../styles/fonts/Lato-Regular.woff");
+}
+@font-face {
+  font-family: "lato-Semibold";
+  src: url("../styles/fonts/Lato-Semibold.woff");
+}
+@font-face {
+  font-family: "lato-Bold";
+  src: url("../styles/fonts/Lato-Bold.woff");
+}
+section {
+  display: grid;
+  margin: 0 10% 0 10%;
+  max-width: 100%;
+  border: solid black 1px;
+}
+
+h2 {
+  color: #36094A;
+  padding: 2% 0 2% 0;
+  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+}/*# sourceMappingURL=style.css.map */
