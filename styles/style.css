@@ -21,5 +21,17 @@ h2 {
   color: #36094A;
   padding: 2% 0 2% 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
-  font-size: 4vw;
+  font-size: 2.5vw;
+}
+
+.text24 {
+  color: #36094A;
+  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.25vw;
+}
+
+.text18 {
+  color: #36094A;
+  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
+  font-size: 1vw;
 }/*# sourceMappingURL=style.css.map */
