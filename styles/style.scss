@@ -148,7 +148,7 @@ section {
 
 //Конец блока психолог 
 
-//блок 5
+//блок 4
 .requests {
     @extend %section_wrapper;
 
@@ -197,6 +197,28 @@ section {
 
         &__rejection {
             display: flex;
+            align-items: center;
+            width: 23vw;
+            height: 4.2vw;
+            background-color: $color_pink_light;
+            border-radius: 25px;
+
+            img {
+                margin: 0 6.2vw 0 1vw;
+                max-width: 2vw;
+            }
+
+            p {
+                @extend %midle_text_style;
+            }
+
+            .image {
+                margin: 0 5vw 0 1vw;
+            }
+        }
+
+        &__rejection:hover {
+            background-color: $color_pink_bright;
         }
     }
 }
