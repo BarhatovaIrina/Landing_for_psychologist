@@ -2,14 +2,17 @@
   font-family: "lato-Regular";
   src: url("../styles/fonts/Lato-Regular.woff");
 }
+
 @font-face {
   font-family: "lato-Semibold";
   src: url("../styles/fonts/Lato-Semibold.woff");
 }
+
 @font-face {
   font-family: "lato-Bold";
   src: url("../styles/fonts/Lato-Bold.woff");
 }
+
 section {
   display: grid;
   margin: 0 10% 0 10%;
@@ -34,4 +37,6 @@ h2 {
   color: #36094A;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
