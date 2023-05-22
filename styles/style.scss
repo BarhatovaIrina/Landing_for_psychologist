@@ -60,29 +60,13 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
 // название блока, строго по порядку, по БЭМ
 
 
-section {
-    @extend %section_wrapper; // подключаем, если это нужно для вашего блока
-
-}
-
-h2 {
-    @extend %h2_text_style;
-
-}
-
-.text24 {
-    @extend %midle_text_style;
-}
-
-.text18 {
-    @extend %small_text_style;
-}
+//@extend %section_wrapper; @extend %h2_text_style; подключаем, если это нужно для вашего блока
 
 
 
 //Блок психолог Настя
 .psychologist {
-    display: grid;
+    @extend %section_wrapper;
     grid-template-columns: 60% 40%;
     max-width: 100vw;
     min-height: 895px;
@@ -133,3 +117,93 @@ h2 {
 }
 
 //Конец блока психолог 
+
+
+
+
+//блок как проходят консультации
+
+.consultation {
+    @extend %section_wrapper;
+}
+
+.consultation__title {
+    @extend %h2_text_style;
+}
+
+.consultation__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-bottom: 5%;
+}
+
+.consultation__main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.consultation__style {
+    background-color: $color_purple_light;
+    box-shadow: $shadow_main;
+    border-radius: 27px;
+    @extend %small_text_style;
+    padding: 5% 9% 5% 8%;
+
+}
+
+.consultation__foto {
+    display: grid;
+    max-width: 100%;
+    margin-left: 20%;
+
+}
+
+.consultation__main-number__one,
+.consultation__main-number__two,
+.consultation__main-number__three {
+    display: grid;
+    max-width: 100%;
+}
+
+//конец блока как проходят консультации
+
+//блок записаться на прием
+
+.appointment {
+    display: grid;
+    background-color: $color_purple_bright;
+}
+
+.appointment__wrapper {
+    @extend %section_wrapper;
+    grid-template-columns: 12fr 1fr 6fr;
+    align-items: center;
+}
+
+.appointment__title {
+    color: white;
+    padding: 2% 0 2% 0;
+    font-family: 'lato-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+.appointment__icon {
+    display: grid;
+    max-width: 40%;
+
+
+
+}
+
+.appointment__name {
+    display: grid;
+    color: white;
+    font-family: 'lato-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+
+//конец блока записаться на прием
