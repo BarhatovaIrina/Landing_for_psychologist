@@ -2,15 +2,19 @@
   font-family: "lato-Regular";
   src: url("../styles/fonts/Lato-Regular.woff");
 }
+
 @font-face {
   font-family: "lato-Semibold";
   src: url("../styles/fonts/Lato-Semibold.woff");
 }
+
 @font-face {
   font-family: "lato-Bold";
   src: url("../styles/fonts/Lato-Bold.woff");
 }
-.requests, section {
+
+.requests,
+section {
   display: grid;
   margin: 0 10% 0 10%;
   max-width: 100%;
@@ -24,63 +28,19 @@ h2 {
   font-size: 2.5vw;
 }
 
-.requests .wrapper__text h4, .text24 {
+.requests .wrapper__text h4,
+.psychologist__text,
+.text24 {
   color: #36094A;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1.25vw;
 }
 
-.requests .wrapper__text p, .text18 {
+.requests .wrapper__text p,
+.text18 {
   color: #36094A;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0;
-  color: #36094A;
-}
-
-.requests .wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 2vw;
-}
-.requests .wrapper__part {
-  display: flex;
-  align-items: center;
-}
-.requests .wrapper__image {
-  padding-right: 44px;
-}
-.requests .wrapper__image img {
-  max-width: 6vw;
-  max-height: 7vw;
-}
-.requests .wrapper__text {
-  max-width: 22vw;
-}
-.requests .wrapper__text h4 {
-  max-height: 2.2vw;
-  margin-bottom: 1.5vw;
-  line-height: 1.5vw;
-}
-.block5 .rejection {
-  display: flex;
-  justify-content: space-between;
-}
-.block5 .rejection__rejection {
-  display: flex;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
