@@ -76,4 +76,11 @@ p {
   max-height: 2.2vw;
   margin-bottom: 1.5vw;
   line-height: 1.5vw;
+}
+.block5 .rejection {
+  display: flex;
+  justify-content: space-between;
+}
+.block5 .rejection__rejection {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

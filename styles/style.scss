@@ -132,3 +132,16 @@ section {
 
     }
 }
+
+// блок 5
+
+.block5 {
+    .rejection {
+        display: flex;
+        justify-content: space-between;
+
+        &__rejection {
+            display: flex;
+        }
+    }
+}
