@@ -1,4 +1,135 @@
 // общие правила и переменные
-$color_purple: #36094A;
+$color_purple_dark: #36094A;
+$color_purple_light: #FCF6FF;
+$color_purple_bright: #873CAA;
+$color_purple: purple;
+$color_pink_bright: #FFBFBF;
+$color_pink_light: #FFE1E1;
+$color_red: #DE0000;
+
+// тени
+$shadow_main: 20px 5px 7px rgba(54, 9, 74, 0.15);
+$shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
+
+//шрифты
+@font-face {
+    font-family: 'lato-Regular';
+    src: url('../styles/fonts/Lato-Regular.woff');
+}
+
+@font-face {
+    font-family: 'lato-Semibold';
+    src: url('../styles/fonts/Lato-Semibold.woff');
+
+}
+
+@font-face {
+    font-family: 'lato-Bold';
+    src: url('../styles/fonts/Lato-Bold.woff');
+
+}
+
+// 
+%section_wrapper {
+    display: grid;
+    margin: 0 10% 0 10%;
+    max-width: 100%;
+    border: solid black 1px;
+}
+
+%h2_text_style {
+    color: $color_purple_dark;
+    padding: 2% 0 2% 0;
+    font-family: 'lato-Bold', Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+}
+
+%midle_text_style {
+    color: $color_purple_dark;
+    font-family: 'lato-Regular', Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
+}
+
+%small_text_style {
+    color: $color_purple_dark;
+    font-family: 'lato-Regular', Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+}
+
 
 // название блока, строго по порядку, по БЭМ
+
+
+section {
+    @extend %section_wrapper; // подключаем, если это нужно для вашего блока
+
+}
+
+h2 {
+    @extend %h2_text_style;
+
+}
+
+.text24 {
+    @extend %midle_text_style;
+}
+
+.text18 {
+    @extend %small_text_style;
+}
+
+
+
+//Блок психолог Настя
+.psychologist {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    max-width: 100vw;
+    min-height: 895px;
+
+    &__picture {
+        display: flex;
+        align-items: center;
+    }
+
+    .psychologist__picture_main {
+        max-width: 100%;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 366px;
+        margin: 264px 0 264px;
+    }
+
+    &__title {
+        font-family: 'lato-Bold', Arial, Helvetica, sans-serif;
+        src: url('../styles/fonts/Lato-Bold.woff');
+        font-size: 3.5vw;
+        font-weight: 700;
+        line-height: 77px;
+        text-align: right;
+        color: $color_purple_dark;
+        margin: 0 0 19px 0;
+    }
+
+    &__subtitle {
+        font-family: 'lato-Semibold', Arial, Helvetica, sans-serif;
+        src: url('../styles/fonts/Lato-Semibold.woff');
+        font-size: 1.6vw;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: right;
+        color: $color_purple_dark;
+        margin: 0 0 55px 0;
+    }
+
+    &__text {
+        @extend %midle_text_style;
+        text-align: right;
+    }
+}
+
+//Конец блока психолог 
