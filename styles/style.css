@@ -10,14 +10,14 @@
   font-family: "lato-Bold";
   src: url("../styles/fonts/Lato-Bold.woff");
 }
-.appointment__wrapper, .consultation, .block5, .requests, .psychologist {
+.experience, .appointment__wrapper, .consultation, .block5, .requests, .psychologist {
   display: grid;
   margin: 0 10% 0 10%;
   max-width: 100%;
   border: solid black 1px;
 }
 
-.consultation__title, h2 {
+.experience__title, .consultation__title, h2 {
   color: #36094A;
   padding: 2% 0 2% 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
@@ -30,7 +30,7 @@
   font-size: 1.25vw;
 }
 
-.consultation .consultation__style, .requests .wrapper__text p {
+.paragraph__text, .consultation .consultation__style, .requests .wrapper__text p {
   color: #36094A;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
@@ -200,4 +200,46 @@ p {
   color: white;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
   font-size: 2vw;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  min-height: 950px;
+}
+.experience__picture {
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  margin-top: 220px;
+}
+.experience .experience__picture_secondary {
+  max-width: 100%;
+  margin-left: -75px;
+}
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 607px;
+  min-height: 601px;
+  margin: 347px 0 197px;
+}
+.experience__paragraph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paragraph__icon {
+  max-width: 28px;
+  max-height: 28px;
+  margin-right: 13px;
+}
+.paragraph__link {
+  text-decoration: none;
+  color: #873CAA;
+}
+.paragraph__link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
