@@ -10,31 +10,51 @@
   font-family: "lato-Bold";
   src: url("../styles/fonts/Lato-Bold.woff");
 }
-.about {
+
+.about ,
+.experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .psychologist {
+
   display: grid;
   margin: 0 10% 0 10%;
   max-width: 100%;
   border: solid black 1px;
 }
 
+
 .about h2 {
   color: #36094a;
+  }
+
+.experience__title, .consultation__title, h2 {
+  color: #36094A;
+
   padding: 2% 0 2% 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
   font-size: 2.5vw;
 }
 
+
 .about .about__items .about__item, .text24 {
   color: #36094a;
+  }
+.block5 .container__rejection p, .requests .wrapper__text h4, .psychologist__text {
+  color: #36094A;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1.25vw;
 }
 
+
 .text18 {
   color: #36094a;
+  }
+
+.paragraph__text, .consultation .consultation__style, .requests .wrapper__text p {
+  color: #36094A;
+
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
 }
+
 
 .about {
   justify-content: center;
@@ -91,4 +111,212 @@
 }
 .about .about__items p {
   margin: 0;
-}/*# sourceMappingURL=style.css.map */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  color: #36094A;
+}
+
+.psychologist {
+  grid-template-columns: 60% 40%;
+  max-width: 100vw;
+  min-height: 895px;
+}
+.psychologist__picture {
+  display: flex;
+  align-items: center;
+}
+.psychologist .psychologist__picture_main {
+  max-width: 100%;
+}
+.psychologist__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 366px;
+  margin: 264px 0 264px;
+}
+.psychologist__title {
+  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+  src: url("../styles/fonts/Lato-Bold.woff");
+  font-size: 3.5vw;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: right;
+  color: #36094A;
+  margin: 0 0 19px 0;
+}
+.psychologist__subtitle {
+  font-family: "lato-Semibold", Arial, Helvetica, sans-serif;
+  src: url("../styles/fonts/Lato-Semibold.woff");
+  font-size: 1.6vw;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: right;
+  color: #36094A;
+  margin: 0 0 55px 0;
+}
+.psychologist__text {
+  text-align: right;
+}
+
+.requests .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2vw;
+}
+.requests .wrapper__part {
+  display: flex;
+  align-items: flex-end;
+}
+.requests .wrapper__image {
+  padding-right: 3vw;
+}
+.requests .wrapper__image img {
+  width: 5vw;
+  height: 5.5vw;
+}
+.requests .wrapper__text {
+  height: 6vw;
+  max-width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.requests .wrapper__text h4 {
+  line-height: 1.5vw;
+}
+.block5 .container {
+  display: flex;
+  justify-content: space-between;
+}
+.block5 .container__rejection {
+  display: flex;
+  align-items: center;
+  width: 23vw;
+  height: 4.2vw;
+  background-color: #FFE1E1;
+  border-radius: 25px;
+}
+.block5 .container__rejection img {
+  margin: 0 6.5vw 0 1vw;
+  max-width: 2vw;
+}
+.block5 .container__rejection .image {
+  margin: 0 5vw 0 1vw;
+}
+.block5 .container__rejection:hover {
+  background-color: #FFBFBF;
+}
+
+.consultation__wrapper {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-bottom: 5%;
+}
+.consultation .consultation__main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-right: 5%;
+  align-items: center;
+}
+.consultation .consultation__style {
+  background-color: #FCF6FF;
+  box-shadow: 20px 5px 7px rgba(54, 9, 74, 0.15);
+  border-radius: 27px;
+  padding: 5% 9% 5% 8%;
+}
+.consultation__foto {
+  display: grid;
+  max-width: 100%;
+  margin-left: 20%;
+}
+.consultation .consultation__main-number__one, .consultation .consultation__main-number__two, .consultation .consultation__main-number__three {
+  display: grid;
+  max-width: 100%;
+}
+
+.appointment {
+  display: grid;
+  background-color: #873CAA;
+}
+.appointment .appointment__wrapper {
+  grid-template-columns: 3fr 1fr 20%;
+  align-items: center;
+}
+.appointment .appointment__wrapper .appointment__title {
+  color: white;
+  padding: 10% 0 10% 0;
+  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+}
+.appointment .appointment__wrapper .appointment__href {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+.appointment .appointment__wrapper .appointment__href .appointment__href-icon {
+  display: grid;
+  max-width: 50%;
+}
+.appointment .appointment__wrapper .appointment__href .appointment__href-name {
+  display: grid;
+  color: white;
+  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  min-height: 950px;
+}
+.experience__picture {
+  display: grid;
+  grid-template-rows: 10% 1fr;
+  margin-top: 220px;
+}
+.experience .experience__picture_secondary {
+  max-width: 100%;
+  margin-left: -75px;
+}
+.experience__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 607px;
+  min-height: 601px;
+  margin: 347px 0 197px;
+}
+.experience__paragraph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paragraph__icon {
+  max-width: 28px;
+  max-height: 28px;
+  margin-right: 13px;
+}
+.paragraph__link {
+  text-decoration: none;
+  color: #873CAA;
+}
+.paragraph__link:hover {
+  text-decoration: underline;
