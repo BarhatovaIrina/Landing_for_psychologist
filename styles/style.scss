@@ -1,9 +1,7 @@
-
 // общие правила и переменные
 $color_purple_dark: #36094a;
 $color_purple_light: #fcf6ff;
 $color_purple_bright: #873caa;
-=======
 $color_purple_dark: #36094A;
 $color_purple_light: #FCF6FF;
 $color_purple_bright: #873CAA;
@@ -19,52 +17,52 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
 
 //шрифты
 @font-face {
-  font-family: "lato-Regular";
-  src: url("../styles/fonts/Lato-Regular.woff");
+    font-family: "lato-Regular";
+    src: url("../styles/fonts/Lato-Regular.woff");
 }
 
 @font-face {
-  font-family: "lato-Semibold";
-  src: url("../styles/fonts/Lato-Semibold.woff");
+    font-family: "lato-Semibold";
+    src: url("../styles/fonts/Lato-Semibold.woff");
 }
 
 @font-face {
-  font-family: "lato-Bold";
-  src: url("../styles/fonts/Lato-Bold.woff");
+    font-family: "lato-Bold";
+    src: url("../styles/fonts/Lato-Bold.woff");
 }
 
 %section_wrapper {
-  display: grid;
-  margin: 0 10% 0 10%;
-  max-width: 100%;
-  border: solid black 1px;
+    display: grid;
+    margin: 0 10% 0 10%;
+    max-width: 100%;
+    border: solid black 1px;
 }
 
 %h2_text_style {
-  color: $color_purple_dark;
-  padding: 2% 0 2% 0;
-  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
+    color: $color_purple_dark;
+    padding: 2% 0 2% 0;
+    font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
 }
 
 %midle_text_style {
-  color: $color_purple_dark;
-  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1.25vw;
+    color: $color_purple_dark;
+    font-family: "lato-Regular", Arial, Helvetica, sans-serif;
+    font-size: 1.25vw;
 }
 
 %small_text_style {
-  color: $color_purple_dark;
-  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+    color: $color_purple_dark;
+    font-family: "lato-Regular", Arial, Helvetica, sans-serif;
+    font-size: 1vw;
 }
 
 .text24 {
-  @extend %midle_text_style;
+    @extend %midle_text_style;
 }
 
 .text18 {
-  @extend %small_text_style;
+    @extend %small_text_style;
 }
 
 // основные св-ва
@@ -90,7 +88,6 @@ h2 {
 
 //@extend %section_wrapper; @extend %h2_text_style; подключаем, если это нужно для вашего блока
 
-// название блока, строго по порядку, по БЭМ
 //Блок 2, психолог Настя
 .psychologist {
     @extend %section_wrapper;
@@ -145,70 +142,81 @@ h2 {
 
 //Конец блока психолог 
 
-// block 3, about-me
+// block 3, about-me, Катя
 .about {
-  @extend %section_wrapper;
-  justify-content: center;
-  position: relative;
-  & h2 {
-    @extend %h2_text_style;
-  }
-  & img {
-    max-width: 560px;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-    top: 19vw;
-    left: 45vw;
-  }
-  .about__items {
-    display: grid;
-    grid-template-columns: 2.42240727% 20.1362604% 7.64572294% 11.5064345% 6.28311885% 2.27100681% 8.0999243% 3.02800908% 25.662377% 2.72520818% 10.1438304%;
-    grid-template-rows: 9.25589837% 26.8602541% 9.25589837% 18.5117967% 9.43738657% 6.35268711% 3.26678766% 7.25952813% 6.71506352% 3.08529946%;
-    max-width: 1321px;
-    width: 100%;
-    max-height: 551px;
-    align-items: center;
+    @extend %section_wrapper;
     justify-content: center;
-    & .about__item:nth-child(1) {
-      grid-column: 1/5;
-      grid-row: 2/5;
+    position: relative;
+
+    & h2 {
+        @extend %h2_text_style;
     }
-    & .about__item:nth-child(2) {
-      grid-column: 8/12;
-      grid-row: 1/3;
+
+    & img {
+        max-width: 560px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: -1;
+        top: 19vw;
+        left: 45vw;
     }
-    & .about__item:nth-child(3) {
-      grid-column: 6/11;
-      grid-row: 4/6;
+
+    .about__items {
+        display: grid;
+        grid-template-columns: 2.42240727% 20.1362604% 7.64572294% 11.5064345% 6.28311885% 2.27100681% 8.0999243% 3.02800908% 25.662377% 2.72520818% 10.1438304%;
+        grid-template-rows: 9.25589837% 26.8602541% 9.25589837% 18.5117967% 9.43738657% 6.35268711% 3.26678766% 7.25952813% 6.71506352% 3.08529946%;
+        max-width: 1321px;
+        width: 100%;
+        max-height: 551px;
+        align-items: center;
+        justify-content: center;
+
+        & .about__item:nth-child(1) {
+            grid-column: 1/5;
+            grid-row: 2/5;
+        }
+
+        & .about__item:nth-child(2) {
+            grid-column: 8/12;
+            grid-row: 1/3;
+        }
+
+        & .about__item:nth-child(3) {
+            grid-column: 6/11;
+            grid-row: 4/6;
+        }
+
+        & .about__item:nth-child(4) {
+            grid-column-start: 2;
+            grid-row: 6/9;
+        }
+
+        & .about__item:nth-child(5) {
+            grid-column: 4/7;
+            grid-row: 8/11;
+        }
+
+        & .about__item:nth-child(6) {
+            grid-column-start: 9;
+            grid-row: 7/10;
+        }
+
+        .about__item {
+            @extend %midle_text_style;
+            background-color: $color_purple_light;
+            border-radius: 25px;
+            box-shadow: $shadow_main;
+            padding: 1.7rem 1.8rem;
+        }
+
+        & p {
+            margin: 0;
+        }
     }
-    & .about__item:nth-child(4) {
-      grid-column-start: 2;
-      grid-row: 6/9;
-    }
-    & .about__item:nth-child(5) {
-      grid-column: 4/7;
-      grid-row: 8/11;
-    }
-    & .about__item:nth-child(6) {
-      grid-column-start: 9;
-      grid-row: 7/10;
-    }
-    .about__item {
-      @extend %midle_text_style;
-      background-color: $color_purple_light;
-      border-radius: 25px;
-      box-shadow: $shadow_main;
-      padding: 1.7rem 1.8rem;
-    }
-    & p {
-      margin: 0;
-    }
-  }
 }
 
-//блок 4
+//блок 4, Самира
 .requests {
     @extend %section_wrapper;
 
@@ -252,7 +260,7 @@ h2 {
     }
 }
 
-// блок 5
+// блок 5, Самира
 .block5 {
     @extend %section_wrapper;
 
@@ -289,8 +297,7 @@ h2 {
 }
 
 
-
-//блок как проходят консультации
+//блок 6, как проходят консультации, Аня
 
 .consultation {
     @extend %section_wrapper;
@@ -337,11 +344,9 @@ h2 {
     }
 }
 
-
 //конец блока как проходят консультации
 
-//блок записаться на прием
-
+//блок 7, записаться на прием, Аня
 .appointment {
     display: grid;
     background-color: $color_purple_bright;
@@ -366,9 +371,6 @@ h2 {
             .appointment__href-icon {
                 display: grid;
                 max-width: 50%;
-
-
-
             }
 
             .appointment__href-name {
@@ -384,11 +386,9 @@ h2 {
     }
 }
 
-
 //конец блока записаться на прием
 
-//Блок Опыт работы Настя
-
+//Блок 8, Опыт работы, Настя
 .experience {
     @extend %section_wrapper;
     display: grid;
@@ -473,7 +473,7 @@ h2 {
 
         &__slider {
             position: relative;
-            transition: 500ms;
+            // transition: 1s;
             display: flex;
 
         }
@@ -484,6 +484,7 @@ h2 {
             flex: 0 0 50%;
             padding: 0 2%;
             display: none;
+            transition: 1s;
         }
 
         &__slide img {
@@ -496,11 +497,13 @@ h2 {
         & .previous {
             display: inline-flex;
             order: 1;
+            transition: 1s;
         }
 
         & .next {
             display: inline-flex;
             order: 2;
+            transition: 1s;
         }
 
         &__button-left {
@@ -508,7 +511,10 @@ h2 {
             left: -60px;
         }
 
-        &__button-left:hover {
+        &__button-left:hover,
+        &__button-right:hover,
+        & .next:hover,
+        & .previous:hover {
             opacity: 0.7;
         }
 
@@ -518,10 +524,5 @@ h2 {
             transform: rotate(180deg);
         }
 
-        &__button-right:hover {
-            opacity: 0.7;
-        }
-
     }
 }
-
