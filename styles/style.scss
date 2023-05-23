@@ -155,6 +155,7 @@ h2 {
 
         &__image {
             padding-right: 44px;
+
             img {
                 max-width: 6vw;
                 max-height: 7vw;
@@ -163,12 +164,14 @@ h2 {
 
         &__text {
             max-width: 22vw;
+
             h4 {
                 @extend %midle_text_style;
                 max-height: 2.2vw;
                 margin-bottom: 1.5vw;
                 line-height: 1.5vw;
             }
+
             p {
                 @extend %small_text_style;
 
@@ -181,6 +184,7 @@ h2 {
 // блок 5
 .block5 {
     @extend %section_wrapper;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -219,50 +223,49 @@ h2 {
 
 .consultation {
     @extend %section_wrapper;
+
+    &__title {
+        @extend %h2_text_style;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        padding-bottom: 5%;
+    }
+
+    & .consultation__main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-right: 5%;
+        align-items: center;
+    }
+
+    & .consultation__style {
+        background-color: $color_purple_light;
+        box-shadow: $shadow_main;
+        border-radius: 27px;
+        @extend %small_text_style;
+        padding: 5% 9% 5% 8%;
+
+    }
+
+    &__foto {
+        display: grid;
+        max-width: 100%;
+        margin-left: 20%;
+
+    }
+
+    & .consultation__main-number__one,
+    & .consultation__main-number__two,
+    & .consultation__main-number__three {
+        display: grid;
+        max-width: 100%;
+    }
 }
 
-
-.consultation__title {
-    @extend %h2_text_style;
-}
-
-.consultation__wrapper {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    padding-bottom: 5%;
-}
-
-
-.consultation__main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-right: 5%;
-    align-items: center;
-}
-
-.consultation__style {
-    background-color: $color_purple_light;
-    box-shadow: $shadow_main;
-    border-radius: 27px;
-    @extend %small_text_style;
-    padding: 5% 9% 5% 8%;
-
-}
-
-.consultation__foto {
-    display: grid;
-    max-width: 100%;
-    margin-left: 20%;
-
-}
-
-.consultation__main-number__one,
-.consultation__main-number__two,
-.consultation__main-number__three {
-    display: grid;
-    max-width: 100%;
-}
 
 //конец блока как проходят консультации
 
