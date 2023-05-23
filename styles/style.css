@@ -10,7 +10,7 @@
   font-family: "lato-Bold";
   src: url("../styles/fonts/Lato-Bold.woff");
 }
-.experience, .appointment__wrapper, .consultation, .block5, .requests, .psychologist {
+.experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .psychologist {
   display: grid;
   margin: 0 10% 0 10%;
   max-width: 100%;
@@ -177,29 +177,31 @@ p {
   display: grid;
   background-color: #873CAA;
 }
-
-.appointment__wrapper {
-  grid-template-columns: 12fr 1fr 6fr;
+.appointment .appointment__wrapper {
+  grid-template-columns: 3fr 1fr 20%;
   align-items: center;
 }
-
-.appointment__title {
+.appointment .appointment__wrapper .appointment__title {
   color: white;
-  padding: 2% 0 2% 0;
+  padding: 10% 0 10% 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
   font-size: 2.5vw;
 }
-
-.appointment__icon {
+.appointment .appointment__wrapper .appointment__href {
   display: grid;
-  max-width: 40%;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
 }
-
-.appointment__name {
+.appointment .appointment__wrapper .appointment__href .appointment__href-icon {
+  display: grid;
+  max-width: 50%;
+}
+.appointment .appointment__wrapper .appointment__href .appointment__href-name {
   display: grid;
   color: white;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
   font-size: 2vw;
+  text-decoration: none;
 }
 
 .experience {
