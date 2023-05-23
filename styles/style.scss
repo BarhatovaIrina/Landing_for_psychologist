@@ -1,4 +1,3 @@
-// общие правила и переменные
 $color_purple_dark: #36094A;
 $color_purple_light: #FCF6FF;
 $color_purple_bright: #873CAA;
@@ -54,6 +53,27 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
     color: $color_purple_dark;
     font-family: 'lato-Regular', Arial, Helvetica, sans-serif;
     font-size: 1vw;
+}
+
+// основные св-ва
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    color: $color_purple_dark;
+}
+
+h2 {
+    @extend %h2_text_style;
 }
 
 
@@ -118,6 +138,80 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
 
 //Конец блока психолог 
 
+//блок 4
+.requests {
+    @extend %section_wrapper;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2vw;
+
+        &__part {
+            display: flex;
+            align-items: center;
+        }
+
+        &__image {
+            padding-right: 44px;
+            img {
+                max-width: 6vw;
+                max-height: 7vw;
+            }
+        }
+
+        &__text {
+            max-width: 22vw;
+            h4 {
+                @extend %midle_text_style;
+                max-height: 2.2vw;
+                margin-bottom: 1.5vw;
+                line-height: 1.5vw;
+            }
+            p {
+                @extend %small_text_style;
+
+            }
+        }
+
+    }
+}
+
+// блок 5
+.block5 {
+    @extend %section_wrapper;
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        &__rejection {
+            display: flex;
+            align-items: center;
+            width: 23vw;
+            height: 4.2vw;
+            background-color: $color_pink_light;
+            border-radius: 25px;
+
+            img {
+                margin: 0 6.2vw 0 1vw;
+                max-width: 2vw;
+            }
+
+            p {
+                @extend %midle_text_style;
+            }
+
+            .image {
+                margin: 0 5vw 0 1vw;
+            }
+        }
+
+        &__rejection:hover {
+            background-color: $color_pink_bright;
+        }
+    }
+}
 
 
 
@@ -126,6 +220,7 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
 .consultation {
     @extend %section_wrapper;
 }
+
 
 .consultation__title {
     @extend %h2_text_style;
@@ -136,6 +231,7 @@ $shadow_header: 21px 0px 4px rgba(54, 9, 74, 0.12);
     grid-template-columns: 3fr 2fr;
     padding-bottom: 5%;
 }
+
 
 .consultation__main {
     display: grid;
