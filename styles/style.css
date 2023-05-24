@@ -30,7 +30,7 @@
   font-size: 1.25vw;
 }
 
-.paragraph__text, .consultation .consultation__style, .requests .wrapper__text p, .text18 {
+.paragraph__text, .consultation .consultation__style, .requests .wrapper p, .requests .wrapper__text p, .text18 {
   color: #36094a;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
@@ -491,6 +491,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-content: center;
   max-width: 607px;
   min-height: 601px;
   gap: 1.4vw;
@@ -499,17 +500,6 @@ p {
   max-width: 100%;
   margin-left: -75px;
 }
-<<<<<<< HEAD
-.experience__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 607px;
-  min-height: 601px;
-  gap: 1.4vw;
-}
-=======
->>>>>>> 15256a58cee5aa99e22ef3d5d784789d02fc6aed
 .experience__paragraph {
   display: flex;
   flex-direction: row;

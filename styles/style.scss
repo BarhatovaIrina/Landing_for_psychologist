@@ -81,14 +81,9 @@ h3,
 h4,
 h5,
 p {
-<<<<<<< HEAD
   margin: 0;
   color: $color_purple_dark;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-=======
-    margin: 0;
-    color: $color_purple_dark;
->>>>>>> 15256a58cee5aa99e22ef3d5d784789d02fc6aed
 }
 
 h2 {
@@ -272,14 +267,9 @@ h2 {
 
 //блок 4, Самира
 .requests {
-<<<<<<< HEAD
   margin-bottom: $margin;
   @extend %section_wrapper;
   position: relative;
-=======
-    margin-bottom: $margin;
-    @extend %section_wrapper;
->>>>>>> 15256a58cee5aa99e22ef3d5d784789d02fc6aed
 
     .wrapper {
         display: grid;
@@ -322,34 +312,6 @@ h2 {
             @extend %small_text_style;
         }
     }
-<<<<<<< HEAD
-
-    &__image {
-      padding-right: 3vw;
-
-      & img {
-        width: 5vw;
-        height: 5.5vw;
-      }
-    }
-
-    &__text {
-      height: 6vw;
-      max-width: 22vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-
-      & h4 {
-        @extend %midle_text_style;
-        line-height: 1.5vw;
-      }
-
-      & p {
-        @extend %small_text_style;
-      }
-    }
-  }
   .back4-5 {
     position: absolute;
     top: 25vw;
@@ -404,8 +366,6 @@ h2 {
       height: 50vw;
     }
   }
-=======
->>>>>>> 15256a58cee5aa99e22ef3d5d784789d02fc6aed
 }
 
 
@@ -760,29 +720,11 @@ h2 {
         margin-left: -75px;
     }
 
-<<<<<<< HEAD
-  &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 607px;
-    min-height: 601px;
-    gap: 1.4vw;
-    //margin: 347px 0 197px;
-  }
-
-  &__paragraph {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-=======
     &__paragraph {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
->>>>>>> 15256a58cee5aa99e22ef3d5d784789d02fc6aed
 }
 
 .paragraph {
@@ -955,3 +897,4 @@ h2 {
     }
 
   }
+}
