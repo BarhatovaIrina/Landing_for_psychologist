@@ -30,7 +30,7 @@
   font-size: 1.25vw;
 }
 
-.paragraph__text, .consultation .consultation__style, .requests .wrapper p, .requests .wrapper__text p, .text18 {
+.paragraph__text, .consultation .consultation__style, .requests .wrapper__text p, .text18 {
   color: #36094a;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   font-size: 1vw;
@@ -50,6 +50,7 @@ h5,
 p {
   margin: 0;
   color: #36094a;
+  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
 }
 
 .psychologist {
@@ -219,32 +220,34 @@ p {
   line-height: 1.5vw;
 }
 @media screen and (max-width: 767px) {
+  .requests {
+    margin: 4%;
+  }
+  .requests h2 {
+    font-size: 4vw;
+  }
   .requests .wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 2vw;
   }
-  .requests .wrapper__part {
-    display: flex;
-    align-items: flex-end;
-  }
   .requests .wrapper__image {
-    padding-right: 3vw;
+    padding-right: 5vw;
   }
   .requests .wrapper__image img {
-    width: 5vw;
-    height: 5.5vw;
+    width: 9.5vw;
+    height: 9.5vw;
   }
   .requests .wrapper__text {
-    height: 6vw;
-    max-width: 22vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height: 10.5vw;
+    max-width: 100%;
   }
   .requests .wrapper__text h4 {
-    line-height: 1.5vw;
+    font-size: 2.8vw;
+  }
+  .requests .wrapper__text p {
+    font-size: 2.3vw;
   }
 }
 .block5 {
@@ -273,6 +276,35 @@ p {
   background-color: #ffbfbf;
 }
 
+@media screen and (max-width: 767px) {
+  .block5 {
+    margin: 4%;
+  }
+  .block5 h2 {
+    font-size: 4vw;
+  }
+  .block5 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vw;
+  }
+  .block5 .container__rejection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7.5vw;
+  }
+  .block5 .container__rejection img {
+    margin: 0 38% 0 5vw;
+    max-width: 2vw;
+  }
+  .block5 .container__rejection p {
+    font-size: 2.8vw;
+  }
+  .block5 .container__rejection .image {
+    margin: 0 33% 0 5vw;
+  }
+}
 .consultation {
   margin-bottom: 7vw;
 }

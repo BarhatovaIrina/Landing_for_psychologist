@@ -83,6 +83,7 @@ h5,
 p {
   margin: 0;
   color: $color_purple_dark;
+  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -305,54 +306,44 @@ h2 {
         @extend %small_text_style;
       }
     }
-
-    p {
-      @extend %small_text_style;
-    }
   }
 }
 
+//адаптация блока 4
 @media screen and (max-width: 767px) {
   .requests {
+    margin: 4%;
+
+    & h2 {
+      font-size: 4vw;
+    }
+
     .wrapper {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 1fr);
       gap: 2vw;
   
-      &__part {
-        display: flex;
-        align-items: flex-end;
-      }
-  
       &__image {
-        padding-right: 3vw;
+        padding-right: 5vw;
   
         & img {
-          width: 5vw;
-          height: 5.5vw;
+          width: 9.5vw;
+          height: 9.5vw;
         }
       }
   
       &__text {
-        height: 6vw;
-        max-width: 22vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        height: 10.5vw;
+        max-width: 100%;
   
         & h4 {
-          @extend %midle_text_style;
-          line-height: 1.5vw;
+          font-size: 2.8vw;
         }
   
         & p {
-          @extend %small_text_style;
+          font-size: 2.3vw;
         }
-      }
-  
-      p {
-        @extend %small_text_style;
       }
     }
   }
@@ -392,6 +383,43 @@ h2 {
 
     &__rejection:hover {
       background-color: $color_pink_bright;
+    }
+  }
+}
+
+//адаптация блока 5
+@media screen and (max-width: 767px) {
+  .block5 {
+    margin: 4%;
+
+    & h2 {
+      font-size: 4vw;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5vw;
+
+      &__rejection {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 7.5vw;
+
+        & img {
+          margin: 0 38% 0 5vw;
+          max-width: 2vw;
+        }
+
+        & p {
+          font-size: 2.8vw;
+        }
+
+        & .image {
+          margin: 0 33% 0 5vw;
+        }
+      }
     }
   }
 }
