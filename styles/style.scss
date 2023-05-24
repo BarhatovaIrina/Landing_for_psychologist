@@ -458,7 +458,6 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: center;
     max-width: 607px;
     min-height: 601px;
     gap: 1.4vw;
@@ -515,76 +514,150 @@ h2 {
 //конец блока Опыт работы Настя
 
 // block 9, certificates
-.certificates {
-  margin-bottom: $margin;
-  @extend %section_wrapper;
+.certificates_bg {
+  position: relative;
 
-  &__title {
-    @extend %h2_text_style;
+  &__img {
+    // фоновое изображение, клякса
+    width: 50%;
+    position: absolute;
+    right: -2vw;
+    bottom: -$margin*2;
   }
 
-  &__slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 300px;
+  .certificates {
+    margin-bottom: $margin;
+    @extend %section_wrapper;
 
-    &__pictures {
-      width: 100%;
-      overflow: hidden;
+    &__title {
+      @extend %h2_text_style;
     }
 
     &__slider {
-      position: relative;
-      // transition: 1s;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &__pictures {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &__slider {
+        position: relative;
+        display: flex;
+      }
+
+      &__slide {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex: 0 0 50%;
+        padding: 0 2%;
+        display: none;
+      }
+
+      &__slide img {
+        width: 90%;
+        object-fit: cover;
+        object-position: 0;
+
+      }
+
+      & .previous {
+        display: inline-flex;
+        order: 1;
+        animation-name: Appearance;
+        animation-duration: 2s;
+      }
+
+      @keyframes Appearance {
+        0% {
+          opacity: 0.3;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      & .next {
+        display: inline-flex;
+        order: 2;
+        animation-name: Appearance2;
+        animation-duration: 2s;
+      }
+
+      @keyframes Appearance2 {
+        0% {
+          opacity: 0.3;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      &__button-left {
+        position: absolute;
+        left: -60px;
+      }
+
+      &__button-left:hover,
+      &__button-right:hover,
+      & .next:hover,
+      & .previous:hover {
+        opacity: 0.7;
+      }
+
+      &__button-right {
+        position: absolute;
+        right: -60px;
+        transform: rotate(180deg);
+      }
     }
 
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .certificates {
     &__slide {
       width: 100%;
-      height: 300px;
-      flex: 0 0 50%;
-      padding: 0 2%;
+      flex: 0 0 100%;
       display: none;
-      transition: 1s;
+      justify-content: center;
     }
 
-    &__slide img {
-      width: 100%;
-      object-fit: cover;
-      object-position: 0;
-      height: 300px;
+    &__slider {
+      &__button-left {
+        position: absolute;
+        left: -60px;
+        width: 30px;
+      }
+
+      &__button-right {
+        position: absolute;
+        right: -60px;
+        width: 30px;
+        transform: rotate(180deg);
+      }
+
+      & .previous {
+        display: inline-flex;
+        order: 1;
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+      }
+
+      & .next {
+        display: none;
+      }
     }
 
-    & .previous {
-      display: inline-flex;
-      order: 1;
-      transition: 1s;
-    }
-
-    & .next {
-      display: inline-flex;
-      order: 2;
-      transition: 1s;
-    }
-
-    &__button-left {
-      position: absolute;
-      left: -60px;
-    }
-
-    &__button-left:hover,
-    &__button-right:hover,
-    & .next:hover,
-    & .previous:hover {
-      opacity: 0.7;
-    }
-
-    &__button-right {
-      position: absolute;
-      right: -60px;
-      transform: rotate(180deg);
-    }
   }
 }
