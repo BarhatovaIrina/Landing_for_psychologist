@@ -81,9 +81,9 @@ h3,
 h4,
 h5,
 p {
-  margin: 0;
-  color: $color_purple_dark;
-  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: $color_purple_dark;
+    font-family: "lato-Regular", Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -267,9 +267,9 @@ h2 {
 
 //блок 4, Самира
 .requests {
-  margin-bottom: $margin;
-  @extend %section_wrapper;
-  position: relative;
+    margin-bottom: $margin;
+    @extend %section_wrapper;
+    position: relative;
 
     .wrapper {
         display: grid;
@@ -312,60 +312,64 @@ h2 {
             @extend %small_text_style;
         }
     }
-  .back4-5 {
-    position: absolute;
-    top: 25vw;
-    left: 12vw;
-    width: 30vw;
-    height: 30vw;
-  }
+    .back4-5 {
+        position: absolute;
+        top: 25vw;
+        left: 12vw;
+        width: 30vw;
+        height: 30vw;
+    }
 }
 
 //адаптация блока 4
 @media screen and (max-width: 767px) {
-  .requests {
-    margin: 4%;
+    .requests {
+        margin-bottom: 10vw;
 
-    & h2 {
-      font-size: 4vw;
-    }
+        & h2 {
+            font-size: 4vw;
+            margin-bottom: 4vw;
+        }
 
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-      gap: 2vw;
-  
-      &__image {
-        padding-right: 5vw;
-  
-        & img {
-          width: 9.5vw;
-          height: 9.5vw;
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2vw;
+
+            &__image {
+                padding-right: 5vw;
+
+                & img {
+                    width: 9.5vw;
+                    height: 9.5vw;
+                }
+            }
+
+            &__text {
+                height: 10.5vw;
+                max-width: 100%;
+
+                & h4 {
+                font-size: 2.8vw;
+                }
+
+                & p {
+                font-size: 2.3vw;
+                }
+            }
         }
-      }
-  
-      &__text {
-        height: 10.5vw;
-        max-width: 100%;
-  
-        & h4 {
-          font-size: 2.8vw;
+        .back4-5 {
+        position: absolute;
+        top: 55vw;
+        left: 40vw;
+        width: 50vw;
+        height: 50vw;
         }
-  
-        & p {
-          font-size: 2.3vw;
-        }
-      }
     }
-    .back4-5 {
-      position: absolute;
-      top: 55vw;
-      left: 40vw;
-      width: 50vw;
-      height: 50vw;
-    }
-  }
+}
+@media screen {
+    
 }
 
 
@@ -408,39 +412,58 @@ h2 {
 
 //адаптация блока 5
 @media screen and (max-width: 767px) {
-  .block5 {
-    margin: 4%;
+    .block5 {
+        margin-bottom: 10vw;
+        & h2 {
+        font-size: 4vw;
+        margin-bottom: 4vw;
+        }
 
-    & h2 {
-      font-size: 4vw;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5vw;
+            margin-right: 5%;
+
+            &__rejection {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 7.5vw;
+
+                & img {
+                    margin: 0 35% 0 5vw;
+                    max-width: 2vw;
+                }
+
+                & p {
+                    font-size: 2.8vw;
+                }
+
+                & .image {
+                    margin: 0 30% 0 5vw;
+                }
+            }
+        }
     }
+}
+@media screen and (max-width: 576px) {
+    .block5 {
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 3.5vw;
-
-      &__rejection {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 7.5vw;
-
-        & img {
-          margin: 0 38% 0 5vw;
-          max-width: 2vw;
+        & h2 {
+        font-size: 4.5vw;
         }
 
-        & p {
-          font-size: 2.8vw;
-        }
+        .container {
 
-        & .image {
-          margin: 0 33% 0 5vw;
+            &__rejection {
+
+                & p {
+                    font-size: 3vw;
+                }
+            }
         }
-      }
     }
-  }
 }
 
 //блок 6, как проходят консультации, Аня

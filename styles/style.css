@@ -230,10 +230,11 @@ p {
 
 @media screen and (max-width: 767px) {
   .requests {
-    margin: 4%;
+    margin-bottom: 10vw;
   }
   .requests h2 {
     font-size: 4vw;
+    margin-bottom: 4vw;
   }
   .requests .wrapper {
     display: grid;
@@ -294,15 +295,17 @@ p {
 
 @media screen and (max-width: 767px) {
   .block5 {
-    margin: 4%;
+    margin-bottom: 10vw;
   }
   .block5 h2 {
     font-size: 4vw;
+    margin-bottom: 4vw;
   }
   .block5 .container {
     display: flex;
     flex-direction: column;
     gap: 3.5vw;
+    margin-right: 5%;
   }
   .block5 .container__rejection {
     display: flex;
@@ -311,14 +314,22 @@ p {
     height: 7.5vw;
   }
   .block5 .container__rejection img {
-    margin: 0 38% 0 5vw;
+    margin: 0 35% 0 5vw;
     max-width: 2vw;
   }
   .block5 .container__rejection p {
     font-size: 2.8vw;
   }
   .block5 .container__rejection .image {
-    margin: 0 33% 0 5vw;
+    margin: 0 30% 0 5vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .block5 h2 {
+    font-size: 4.5vw;
+  }
+  .block5 .container__rejection p {
+    font-size: 3vw;
   }
 }
 .consultation {
