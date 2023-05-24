@@ -330,14 +330,6 @@ p {
   max-width: 100%;
   margin-left: -75px;
 }
-.experience__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 607px;
-  min-height: 601px;
-  margin: 347px 0 197px;
-}
 .experience__paragraph {
   display: flex;
   flex-direction: row;
