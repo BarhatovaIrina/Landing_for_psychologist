@@ -42,10 +42,10 @@ $margin: 7vw;
 }
 
 %h2_text_style {
-    color: $color_purple_dark;
-    padding: 2vw 0 4vw 0;
-    font-family: "lato-Bold", Arial, Helvetica, sans-serif;
-    font-size: 2.5vw;
+  color: $color_purple_dark;
+  padding: 2vw 0 4vw 0;
+  font-family: "lato-Bold", Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
 }
 
 %midle_text_style {
@@ -93,11 +93,11 @@ h2 {
 
 //Блок 2, психолог Настя
 .psychologist {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
-    grid-template-columns: 60% 40%;
-    max-width: 100vw;
-    min-height: 895px;
+  margin-bottom: $margin;
+  @extend %section_wrapper;
+  grid-template-columns: 60% 40%;
+  max-width: 100vw;
+  min-height: 895px;
 
   &__picture {
     display: flex;
@@ -151,9 +151,9 @@ h2 {
   background-image: url(./images/bg-about.jpg);
   background-size: cover;
   padding: 3rem 0;
-  
+
   .about {
-margin-bottom: $margin;
+    margin-bottom: $margin;
     @extend %section_wrapper;
     justify-content: center;
     position: relative;
@@ -255,6 +255,7 @@ margin-bottom: $margin;
           width: 100%;
           font-size: 0.8rem;
         }
+
         & .about__item:nth-child(1) {
           margin-top: 1rem;
         }
@@ -265,8 +266,8 @@ margin-bottom: $margin;
 
 //блок 4, Самира
 .requests {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
+  margin-bottom: $margin;
+  @extend %section_wrapper;
 
   .wrapper {
     display: grid;
@@ -282,65 +283,66 @@ margin-bottom: $margin;
     &__image {
       padding-right: 3vw;
 
-            & img {
-                width: 5vw;
-                height: 5.5vw;
-            }
-        }
+      & img {
+        width: 5vw;
+        height: 5.5vw;
+      }
+    }
 
-        &__text {
-            height: 6vw;
-            max-width: 22vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
+    &__text {
+      height: 6vw;
+      max-width: 22vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
 
-            & h4 {
-                @extend %midle_text_style;
-                line-height: 1.5vw;
-            }
+      & h4 {
+        @extend %midle_text_style;
+        line-height: 1.5vw;
+      }
 
-            & p {
-                @extend %small_text_style;
-            }
-        }
-      p {
+      & p {
         @extend %small_text_style;
       }
+    }
+
+    p {
+      @extend %small_text_style;
     }
   }
 }
 
+
 // блок 5, Самира
 .block5 {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
+  margin-bottom: $margin;
+  @extend %section_wrapper;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
+  .container {
+    display: flex;
+    justify-content: space-between;
 
-        &__rejection {
-            display: flex;
-            align-items: center;
-            width: 23vw;
-            height: 4.2vw;
-            background-color: $color_pink_light;
-            border-radius: 25px;
+    &__rejection {
+      display: flex;
+      align-items: center;
+      width: 23vw;
+      height: 4.2vw;
+      background-color: $color_pink_light;
+      border-radius: 25px;
 
-            & img {
-                margin: 0 5.5vw 0 2vw;
-                max-width: 2vw;
-            }
+      & img {
+        margin: 0 5.5vw 0 2vw;
+        max-width: 2vw;
+      }
 
-            & p {
-                @extend %midle_text_style;
-            }
+      & p {
+        @extend %midle_text_style;
+      }
 
-            & .image {
-                margin: 0 4vw 0 2vw;
-            }
-        }
+      & .image {
+        margin: 0 4vw 0 2vw;
+      }
+    }
 
     &__rejection:hover {
       background-color: $color_pink_bright;
@@ -351,8 +353,8 @@ margin-bottom: $margin;
 //блок 6, как проходят консультации, Аня
 
 .consultation {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
+  margin-bottom: $margin;
+  @extend %section_wrapper;
 
   &__title {
     @extend %h2_text_style;
@@ -438,30 +440,30 @@ margin-bottom: $margin;
 
 //Блок 8, Опыт работы, Настя
 .experience {
-    margin-bottom: $margin;
-    margin-top: $margin;
-    @extend %section_wrapper;
+  margin-bottom: $margin;
+  margin-top: $margin;
+  @extend %section_wrapper;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100vw;
+  //min-height: 950px;
+
+  &__picture {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 100vw;
-    //min-height: 950px;
+    grid-template-rows: 10% 1fr;
+    //margin-top: 220px;
+  }
 
-    &__picture {
-        display: grid;
-        grid-template-rows: 10% 1fr;
-        //margin-top: 220px;
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: center;
-        max-width: 607px;
-        min-height: 601px;
-        gap: 1.4vw;
-        //margin: 347px 0 197px;
-    }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    max-width: 607px;
+    min-height: 601px;
+    gap: 1.4vw;
+    //margin: 347px 0 197px;
+  }
 
   &__title {
     @extend %h2_text_style;
@@ -514,8 +516,8 @@ margin-bottom: $margin;
 
 // block 9, certificates
 .certificates {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
+  margin-bottom: $margin;
+  @extend %section_wrapper;
 
   &__title {
     @extend %h2_text_style;
