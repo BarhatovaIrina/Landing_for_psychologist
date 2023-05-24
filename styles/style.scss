@@ -401,9 +401,6 @@ h2 {
     .consultation__title {
         font-size: 3vw;
     }
-
-
-
     .consultation__wrapper {
 
 
@@ -413,13 +410,6 @@ h2 {
         }
     }
 }
-
-
-
-
-
-
-
 
 @media(min-width:576px) and (max-width:767px) {
     .consultation__title {
@@ -437,14 +427,7 @@ h2 {
         .consultation__foto {
             display: none;
         }
-
-
-
-
     }
-
-
-
 }
 
 @media (max-width:576px) {
@@ -461,15 +444,11 @@ h2 {
         }
 
         .consultation__main {
-
             grid-template-columns: 1fr;
-
-
         }
 
         .consultation__foto {
             display: none;
-
         }
 
         .consultation__main-number__one,
@@ -479,9 +458,6 @@ h2 {
 
         }
     }
-
-
-
 
 }
 
@@ -542,9 +518,6 @@ h2 {
             grid-template-columns: 2fr 1fr;
 
             .appointment__title {
-
-
-
                 font-size: 3vw;
             }
 
@@ -683,78 +656,151 @@ h2 {
 }
 
 //конец блока Опыт работы Настя
-
+  
 // block 9, certificates
-.certificates {
+.certificates_bg {
+  position: relative;
+
+  &__img {
+    // фоновое изображение, клякса
+    width: 50%;
+    position: absolute;
+    right: -2vw;
+    bottom: -$margin*2;
+  }
+
+  .certificates {
     margin-bottom: $margin;
     @extend %section_wrapper;
 
     &__title {
-        @extend %h2_text_style;
+      @extend %h2_text_style;
     }
 
     &__slider {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &__pictures {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      &__slider {
         position: relative;
-        height: 300px;
+        display: flex;
+      }
 
-        &__pictures {
-            width: 100%;
-            overflow: hidden;
+      &__slide {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex: 0 0 50%;
+        padding: 0 2%;
+        display: none;
+      }
+
+      &__slide img {
+        width: 90%;
+        object-fit: cover;
+        object-position: 0;
+
+      }
+
+      & .previous {
+        display: inline-flex;
+        order: 1;
+        animation-name: Appearance;
+        animation-duration: 2s;
+      }
+
+      @keyframes Appearance {
+        0% {
+          opacity: 0.3;
         }
 
-        &__slider {
-            position: relative;
-            // transition: 1s;
-            display: flex;
+        100% {
+          opacity: 1;
+        }
+      }
+
+      & .next {
+        display: inline-flex;
+        order: 2;
+        animation-name: Appearance2;
+        animation-duration: 2s;
+      }
+
+      @keyframes Appearance2 {
+        0% {
+          opacity: 0.3;
         }
 
-        &__slide {
-            width: 100%;
-            height: 300px;
-            flex: 0 0 50%;
-            padding: 0 2%;
-            display: none;
-            transition: 1s;
+        100% {
+          opacity: 1;
         }
+      }
 
-        &__slide img {
-            width: 100%;
-            object-fit: cover;
-            object-position: 0;
-            height: 300px;
-        }
+      &__button-left {
+        position: absolute;
+        left: -60px;
+      }
 
-        & .previous {
-            display: inline-flex;
-            order: 1;
-            transition: 1s;
-        }
+      &__button-left:hover,
+      &__button-right:hover,
+      & .next:hover,
+      & .previous:hover {
+        opacity: 0.7;
+      }
 
-        & .next {
-            display: inline-flex;
-            order: 2;
-            transition: 1s;
-        }
-
-        &__button-left {
-            position: absolute;
-            left: -60px;
-        }
-
-        &__button-left:hover,
-        &__button-right:hover,
-        & .next:hover,
-        & .previous:hover {
-            opacity: 0.7;
-        }
-
-        &__button-right {
-            position: absolute;
-            right: -60px;
-            transform: rotate(180deg);
-        }
+      &__button-right {
+        position: absolute;
+        right: -60px;
+        transform: rotate(180deg);
+      }
     }
+
+  }
 }
+
+
+@media screen and (max-width: 960px) {
+  .certificates {
+    &__slide {
+      width: 100%;
+      flex: 0 0 100%;
+      display: none;
+      justify-content: center;
+    }
+
+    &__slider {
+      &__button-left {
+        position: absolute;
+        left: -60px;
+        width: 30px;
+      }
+
+      &__button-right {
+        position: absolute;
+        right: -60px;
+        width: 30px;
+        transform: rotate(180deg);
+      }
+
+      & .previous {
+        display: inline-flex;
+        order: 1;
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+      }
+
+      & .next {
+        display: none;
+      }
+    }
+
+  }
