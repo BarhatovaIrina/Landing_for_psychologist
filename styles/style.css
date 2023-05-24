@@ -218,6 +218,35 @@ p {
 .requests .wrapper__text h4 {
   line-height: 1.5vw;
 }
+@media screen and (max-width: 767px) {
+  .requests .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vw;
+  }
+  .requests .wrapper__part {
+    display: flex;
+    align-items: flex-end;
+  }
+  .requests .wrapper__image {
+    padding-right: 3vw;
+  }
+  .requests .wrapper__image img {
+    width: 5vw;
+    height: 5.5vw;
+  }
+  .requests .wrapper__text {
+    height: 6vw;
+    max-width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .requests .wrapper__text h4 {
+    line-height: 1.5vw;
+  }
+}
 .block5 {
   margin-bottom: 7vw;
 }
