@@ -478,10 +478,11 @@ h2 {
   &__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 607px;
     min-height: 601px;
-    margin: 347px 0 197px;
+    gap: 1.4vw;
+    //margin: 347px 0 197px;
   }
 
   &__paragraph {
