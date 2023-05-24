@@ -269,6 +269,7 @@ h2 {
 .requests {
   margin-bottom: $margin;
   @extend %section_wrapper;
+  position: relative;
 
   .wrapper {
     display: grid;
@@ -306,6 +307,13 @@ h2 {
         @extend %small_text_style;
       }
     }
+  }
+  .back4-5 {
+    position: absolute;
+    top: 25vw;
+    left: 12vw;
+    width: 30vw;
+    height: 30vw;
   }
 }
 
@@ -345,6 +353,13 @@ h2 {
           font-size: 2.3vw;
         }
       }
+    }
+    .back4-5 {
+      position: absolute;
+      top: 60vw;
+      left: 10vw;
+      width: 50vw;
+      height: 50vw;
     }
   }
 }
