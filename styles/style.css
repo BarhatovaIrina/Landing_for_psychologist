@@ -275,6 +275,51 @@ p {
   max-width: 100%;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .consultation__title {
+    font-size: 3vw;
+  }
+  .consultation__wrapper .consultation__style {
+    font-size: 1.5vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .consultation__title {
+    font-size: 4.5vw;
+  }
+  .consultation__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .consultation__wrapper .consultation__style {
+    font-size: 2vw;
+  }
+  .consultation__wrapper .consultation__foto {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .consultation__title {
+    font-size: 4.5vw;
+  }
+  .consultation__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .consultation__wrapper .consultation__style {
+    font-size: 2.7vw;
+    border-radius: 15px;
+  }
+  .consultation__wrapper .consultation__main {
+    grid-template-columns: 1fr;
+  }
+  .consultation__wrapper .consultation__foto {
+    display: none;
+  }
+  .consultation__wrapper .consultation__main-number__one,
+  .consultation__wrapper .consultation__main-number__two,
+  .consultation__wrapper .consultation__main-number__three {
+    display: none;
+  }
+}
 .appointment {
   display: grid;
   background-color: #873caa;
@@ -298,6 +343,9 @@ p {
   display: grid;
   max-width: 50%;
 }
+.appointment .appointment__wrapper .appointment__href .appointment__href-icon:hover {
+  opacity: 50%;
+}
 .appointment .appointment__wrapper .appointment__href .appointment__href-name {
   display: grid;
   color: white;
@@ -305,7 +353,52 @@ p {
   font-size: 2vw;
   text-decoration: none;
 }
+.appointment .appointment__wrapper .appointment__href .appointment__href-name:hover {
+  opacity: 50%;
+}
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .appointment .appointment__wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+  .appointment .appointment__wrapper .appointment__title {
+    font-size: 3vw;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-icon {
+    max-width: 60%;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-name {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .appointment .appointment__wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+  .appointment .appointment__wrapper .appointment__title {
+    font-size: 4.5vw;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-icon {
+    max-width: 70%;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-name {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 576px) {
+  .appointment .appointment__wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+  .appointment .appointment__wrapper .appointment__title {
+    font-size: 4.5vw;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-icon {
+    max-width: 70%;
+  }
+  .appointment .appointment__wrapper .appointment__href .appointment__href-name {
+    font-size: 4vw;
+  }
+}
 .experience {
   margin-bottom: 7vw;
   margin-top: 7vw;
@@ -328,14 +421,6 @@ p {
 .experience .experience__picture_secondary {
   max-width: 100%;
   margin-left: -75px;
-}
-.experience__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 607px;
-  min-height: 601px;
-  margin: 347px 0 197px;
 }
 .experience__paragraph {
   display: flex;
