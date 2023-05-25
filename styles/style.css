@@ -50,6 +50,7 @@ h5,
 p {
   margin: 0;
   color: #36094a;
+  font-family: "lato-Regular", Arial, Helvetica, sans-serif;
 }
 
 .psychologist {
@@ -190,6 +191,7 @@ p {
 }
 .requests {
   margin-bottom: 7vw;
+  position: relative;
 }
 .requests .wrapper {
   display: grid;
@@ -218,6 +220,53 @@ p {
 .requests .wrapper__text h4 {
   line-height: 1.5vw;
 }
+.requests .back4-5 {
+  position: absolute;
+  top: 25vw;
+  left: 12vw;
+  width: 30vw;
+  height: 30vw;
+}
+
+@media screen and (max-width: 767px) {
+  .requests {
+    margin-bottom: 10vw;
+  }
+  .requests h2 {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+  }
+  .requests .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2vw;
+  }
+  .requests .wrapper__image {
+    padding-right: 5vw;
+  }
+  .requests .wrapper__image img {
+    width: 9.5vw;
+    height: 9.5vw;
+  }
+  .requests .wrapper__text {
+    height: 10.5vw;
+    max-width: 100%;
+  }
+  .requests .wrapper__text h4 {
+    font-size: 2.8vw;
+  }
+  .requests .wrapper__text p {
+    font-size: 2.3vw;
+  }
+  .requests .back4-5 {
+    position: absolute;
+    top: 55vw;
+    left: 40vw;
+    width: 50vw;
+    height: 50vw;
+  }
+}
 .block5 {
   margin-bottom: 7vw;
 }
@@ -244,6 +293,45 @@ p {
   background-color: #ffbfbf;
 }
 
+@media screen and (max-width: 767px) {
+  .block5 {
+    margin-bottom: 10vw;
+  }
+  .block5 h2 {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+  }
+  .block5 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vw;
+    margin-right: 5%;
+  }
+  .block5 .container__rejection {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7.5vw;
+  }
+  .block5 .container__rejection img {
+    margin: 0 35% 0 5vw;
+    max-width: 2vw;
+  }
+  .block5 .container__rejection p {
+    font-size: 2.8vw;
+  }
+  .block5 .container__rejection .image {
+    margin: 0 30% 0 5vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .block5 h2 {
+    font-size: 4.5vw;
+  }
+  .block5 .container__rejection p {
+    font-size: 3vw;
+  }
+}
 .consultation {
   margin-bottom: 7vw;
 }
@@ -413,6 +501,7 @@ p {
 .experience__list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: center;
   max-width: 607px;
   min-height: 601px;
