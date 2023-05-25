@@ -2,9 +2,7 @@
 $color_purple_dark: #36094a;
 $color_purple_light: #fcf6ff;
 $color_purple_bright: #873caa;
-$color_purple_dark: #36094a;
-$color_purple_light: #fcf6ff;
-$color_purple_bright: #873caa;
+
 
 $color_purple: purple;
 $color_pink_bright: #ffbfbf;
@@ -90,7 +88,120 @@ h2 {
     @extend %h2_text_style;
 }
 
+body {
+    min-width: 320px;
+    background-color: #FFFFFF;
+}
+
 //@extend %section_wrapper; @extend %h2_text_style; подключаем, если это нужно для вашего блока
+
+
+// block header
+
+.container-header {
+    background-color: #FCF6FF;
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    width: 100%;
+
+    & .logo {
+        height: 36.75px;
+        width: 85px;
+        margin-left: 41px;
+        border-radius: 20px;
+        margin-top: 25px;
+    }
+
+
+    & .block-nav {
+        height: 38px;
+        width: 850px;
+        left: 967px;
+        top: 34px;
+        margin-top: 20px;
+    }
+
+    & .language {
+        height: 36.75px;
+        width: 85px;
+        left: 40px;
+        top: 29px;
+        border-radius: 20px;
+        left: 38px;
+        color: #FFFFFF;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: right;
+        background-color: #873CAA;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: none;
+    }
+
+    & .phone {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border: none;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: right;
+        text-decoration: none;
+        color: #36094A;
+        margin-right: 20px;
+    }
+
+
+    & .menu {
+        display: flex;
+        justify-content: end;
+        margin-right: 0px;
+        margin-left: 970;
+    }
+
+    & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    & li {
+        float: left;
+    }
+
+    & li a {
+        display: block;
+        color: #36094A;
+        text-align: center;
+        padding: 12px 10px;
+        text-decoration: none;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0em;
+    }
+
+    & .contact {
+        height: 37px;
+        width: 232px;
+        left: 1655px;
+        top: 34px;
+        border-radius: 0px;
+        margin-top: 30px;
+        margin-right: 41px;
+    }
+}
+
 
 //Блок 2, психолог Настя
 .psychologist {
@@ -312,6 +423,7 @@ h2 {
             @extend %small_text_style;
         }
     }
+
     .back4-5 {
         position: absolute;
         top: 25vw;
@@ -351,26 +463,26 @@ h2 {
                 max-width: 100%;
 
                 & h4 {
-                font-size: 2.8vw;
+                    font-size: 2.8vw;
                 }
 
                 & p {
-                font-size: 2.3vw;
+                    font-size: 2.3vw;
                 }
             }
         }
+
         .back4-5 {
-        position: absolute;
-        top: 55vw;
-        left: 40vw;
-        width: 50vw;
-        height: 50vw;
+            position: absolute;
+            top: 55vw;
+            left: 40vw;
+            width: 50vw;
+            height: 50vw;
         }
     }
 }
-@media screen {
-    
-}
+
+@media screen {}
 
 
 // блок 5, Самира
@@ -414,9 +526,10 @@ h2 {
 @media screen and (max-width: 767px) {
     .block5 {
         margin-bottom: 10vw;
+
         & h2 {
-        font-size: 4vw;
-        margin-bottom: 4vw;
+            font-size: 4vw;
+            margin-bottom: 4vw;
         }
 
         .container {
@@ -447,11 +560,12 @@ h2 {
         }
     }
 }
+
 @media screen and (max-width: 576px) {
     .block5 {
 
         & h2 {
-        font-size: 4.5vw;
+            font-size: 4.5vw;
         }
 
         .container {
@@ -517,6 +631,7 @@ h2 {
     .consultation__title {
         font-size: 3vw;
     }
+
     .consultation__wrapper {
 
 
@@ -772,152 +887,181 @@ h2 {
 }
 
 //конец блока Опыт работы Настя
-  
+
 // block 9, certificates
 .certificates_bg {
-  position: relative;
+    position: relative;
 
-  &__img {
-    // фоновое изображение, клякса
-    width: 50%;
-    position: absolute;
-    right: -2vw;
-    bottom: -$margin*2;
-  }
-
-  .certificates {
-    margin-bottom: $margin;
-    @extend %section_wrapper;
-
-    &__title {
-      @extend %h2_text_style;
+    &__img {
+        // фоновое изображение, клякса
+        width: 50%;
+        position: absolute;
+        right: -2vw;
+        bottom: -$margin*2;
     }
 
-    &__slider {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+    .certificates {
+        margin-bottom: $margin;
+        @extend %section_wrapper;
 
-      &__pictures {
-        width: 100%;
-        overflow: hidden;
-      }
-
-      &__slider {
-        position: relative;
-        display: flex;
-      }
-
-      &__slide {
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        flex: 0 0 50%;
-        padding: 0 2%;
-        display: none;
-      }
-
-      &__slide img {
-        width: 90%;
-        object-fit: cover;
-        object-position: 0;
-
-      }
-
-      & .previous {
-        display: inline-flex;
-        order: 1;
-        animation-name: Appearance;
-        animation-duration: 2s;
-      }
-
-      @keyframes Appearance {
-        0% {
-          opacity: 0.3;
+        &__title {
+            @extend %h2_text_style;
         }
 
-        100% {
-          opacity: 1;
+        &__slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &__pictures {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            &__slider {
+                position: relative;
+                display: flex;
+            }
+
+            &__slide {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                flex: 0 0 50%;
+                padding: 0 2%;
+                display: none;
+            }
+
+            &__slide img {
+                width: 90%;
+                object-fit: cover;
+                object-position: 0;
+
+            }
+
+            & .previous {
+                display: inline-flex;
+                order: 1;
+                animation-name: Appearance;
+                animation-duration: 2s;
+            }
+
+            @keyframes Appearance {
+                0% {
+                    opacity: 0.3;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            & .next {
+                display: inline-flex;
+                order: 2;
+                animation-name: Appearance2;
+                animation-duration: 2s;
+            }
+
+            @keyframes Appearance2 {
+                0% {
+                    opacity: 0.3;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            &__button-left {
+                position: absolute;
+                left: -60px;
+            }
+
+            &__button-left:hover,
+            &__button-right:hover,
+            & .next:hover,
+            & .previous:hover {
+                opacity: 0.7;
+            }
+
+            &__button-right {
+                position: absolute;
+                right: -60px;
+                transform: rotate(180deg);
+            }
         }
-      }
 
-      & .next {
-        display: inline-flex;
-        order: 2;
-        animation-name: Appearance2;
-        animation-duration: 2s;
-      }
-
-      @keyframes Appearance2 {
-        0% {
-          opacity: 0.3;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }
-
-      &__button-left {
-        position: absolute;
-        left: -60px;
-      }
-
-      &__button-left:hover,
-      &__button-right:hover,
-      & .next:hover,
-      & .previous:hover {
-        opacity: 0.7;
-      }
-
-      &__button-right {
-        position: absolute;
-        right: -60px;
-        transform: rotate(180deg);
-      }
     }
-
-  }
 }
 
 
 @media screen and (max-width: 960px) {
-  .certificates {
-    &__slide {
-      width: 100%;
-      flex: 0 0 100%;
-      display: none;
-      justify-content: center;
+    .certificates {
+        &__slide {
+            width: 100%;
+            flex: 0 0 100%;
+            display: none;
+            justify-content: center;
+        }
+
+        &__slider {
+            &__button-left {
+                position: absolute;
+                left: -60px;
+                width: 30px;
+            }
+
+            &__button-right {
+                position: absolute;
+                right: -60px;
+                width: 30px;
+                transform: rotate(180deg);
+            }
+
+            & .previous {
+                display: inline-flex;
+                order: 1;
+                flex: 0 0 100%;
+                width: 100%;
+                height: auto;
+                justify-content: center;
+            }
+
+            & .next {
+                display: none;
+            }
+        }
+
     }
 
-    &__slider {
-      &__button-left {
-        position: absolute;
-        left: -60px;
-        width: 30px;
-      }
+}
 
-      &__button-right {
-        position: absolute;
-        right: -60px;
-        width: 30px;
-        transform: rotate(180deg);
-      }
+.block-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FCF6FF;
+    opacity: 1;
+    width: 100%;
+    height: 113px;
+    padding: 40px;
 
-      & .previous {
-        display: inline-flex;
-        order: 1;
-        flex: 0 0 100%;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-      }
+    &__text {
+        width: 50%;
 
-      & .next {
-        display: none;
-      }
+        &__subtext {
+            @extend %small_text_style;
+        }
     }
 
-  }
+    & .media {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        height: 40px;
+
+    }
 }
