@@ -6,12 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Александра Ермилова</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <!-- пишем названия блока, строго по порядку -->
-    <header></header>
+    <header class="container-header">
+        <div class="logo"><button class="language">
+                <img src="/assets/images/🦆 global_.svg" alt="language">En
+            </button>
+        </div>
+        <div class="block-nav">
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Запросы</a></li>
+                    <li><a href="">Для кого</a></li>
+                    <li><a href="">Опыт работы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact"> <span class="phone">
+                <img src="/assets/images/🦆 call.svg" alt="call">
+                +995 591 04 2426</span>
+        </div>
+    </header>
     <main>
         <!-- Блок психолог Настя -->
         <section class="psychologist">
@@ -138,6 +156,7 @@
                     </div>
                 </div>
             </div>
+            <img src="./styles/images/back4-5.svg" alt="backgr" class="back4-5">
         </section>
 
         <!--блок 5, Самира-->
@@ -194,10 +213,10 @@
             <div class="appointment__wrapper">
                 <h2 class="appointment__title">Записаться на прием:</h2>
                 <div class="appointment__href">
-                    <a href="https://t.me/myumyu"><img src="./styles/images/🦆 icon _send 2_.svg" alt="иконка-самолетик"
+                    <a href="#"><img src="./styles/images/🦆 icon _send 2_.svg" alt="иконка-самолетик"
                             class="appointment__href-icon" />
                     </a>
-                    <a href="https://t.me/myumyu" class="appointment__href-name">@myumyu</a>
+                    <a href="#" class="appointment__href-name">@myumyu</a>
                 </div>
             </div>
         </section>
@@ -261,7 +280,8 @@
                     <img src="styles/images/Vector-v.png" alt="check" class="paragraph__icon" />
                     <p class="paragraph__text">
                         Создательница и ведущая группы поддержки
-                        <a class="paragraph__link" href="https://ru-ru.facebook.com/svobodavnutri/">"Свобода внутри"</a>
+                        <a class="paragraph__link" href="https://ru-ru.facebook.com/svobodavnutri/">"Свобода
+                            внутри"</a>
                         для людей, испытывающих тревогу в связи с политической ситуацией в
                         России
                     </p>
@@ -279,7 +299,8 @@
                     <img src="styles/images/Vector-v.png" alt="check" class="paragraph__icon" />
                     <p class="paragraph__text">
                         Волонтер-психолог благотворительной организации <br />
-                        <a class="paragraph__link" href="https://helpingtoleave.org/en">"Помогаем уехать"</a>
+                        <a class="paragraph__link" href="https://helpingtoleave.org/en">"Помогаем
+                            уехать"</a>
                         в Тбилиси
                     </p>
                 </div>
@@ -288,49 +309,66 @@
         <!-- конец блока Опыт работы Настя -->
 
         <!--блок 9, Ира -->
-        <section class="certificates">
-            <h2 class="certificates__title">Сертификаты</h2>
-            <div class="certificates__slider">
-                <div class="certificates__slider__button-left">
-                    <img src="styles/images/arrow.png" alt="arrow_previous" id="prev" />
-                </div>
-                <div class="certificates__slider__pictures">
-                    <div class="certificates__slider__slider">
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c1.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c2.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c3.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c4.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c5.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c6.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c7.jpg" alt="certificates" />
-                        </div>
-                        <div class="certificates__slider__slide">
-                            <img src="styles/images/certificats/c8.jpg" alt="certificates" />
+        <div class="certificates_bg">
+            <img src="./styles/images/fon-slider.png" alt="fon" class="certificates_bg__img">
+            <section class="certificates">
+                <h2 class="certificates__title">Сертификаты</h2>
+                <div class="certificates__slider">
+                    <div class="certificates__slider__button-left">
+                        <img src="styles/images/arrow.png" alt="arrow_previous" id="prev" />
+                    </div>
+                    <div class="certificates__slider__pictures">
+                        <div class="certificates__slider__slider">
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c1.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c2.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c3.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c4.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c5.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c6.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c7.jpg" alt="certificates" />
+                            </div>
+                            <div class="certificates__slider__slide">
+                                <img src="styles/images/certificats/c8.jpg" alt="certificates" />
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="certificates__slider__button-right">
-                    <img src="styles/images/arrow.png" alt="arrow_next" id="next" />
+                    <div class="certificates__slider__button-right">
+                        <img src="styles/images/arrow.png" alt="arrow_next" id="next" />
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <!-- конец блока 9 -->
     </main>
-    <footer></footer>
+    <footer class="block-footer">
+        <div class="block-footer__text">
+            <p class="block-footer__text__subtext">Александра Ермилова.</p>
+            <p class="block-footer__text__subtext">Психолог-консультант </p>
+            <p class="block-footer__text__subtext">© 2023</p>
+        </div>
+        <div class="media">
+            <a href="https://instagram.com/aleksandra_ermi?igshid=NTc4MTIwNjQ2YQ=="><img class="media__image"
+                    src="/assets/images/instagram.svg" alt="instagram"></a>
+            <a href="https://t.me/myumyu"><img class="media__image" src="/assets/images/telegram.svg"
+                    alt="telegram"></a>
+            <a href="https://wa.me/995591042426"><img class="media__image" src="/assets/images/phone.svg"
+                    alt="phone"></a>
+        </div>
+    </footer>
     <script src="assets/js/slider.js"></script>
 </body>
 
