@@ -768,7 +768,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .block-footer {
-    height: 15vw;
+    height: 19vw;
     padding: 0 4vw;
   }
   .block-footer__text {
