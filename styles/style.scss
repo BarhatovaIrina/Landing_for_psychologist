@@ -1074,7 +1074,7 @@ body {
 
 @media screen and (max-width: 767px) {
     .block-footer {
-    height: 19vw;
+    height: 15vw;
     padding: 0 4vw;
 
     &__text {
@@ -1089,6 +1089,27 @@ body {
         width: 25vw;
         &__image {
             width: 5vw;
+        }
+    }
+}
+}
+
+@media screen and (max-width:576px) {
+    .block-footer {
+    height: 19vw;
+    padding: 0 5.5vw;
+
+    &__text {
+
+        &__subtext {
+            font-size: 2vw;
+        }
+    }
+
+    & .media {
+        width: 27vw;
+        &__image {
+            width: 5.5vw;
         }
     }
 }

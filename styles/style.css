@@ -768,7 +768,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .block-footer {
-    height: 19vw;
+    height: 15vw;
     padding: 0 4vw;
   }
   .block-footer__text {
@@ -782,5 +782,20 @@ body {
   }
   .block-footer .media__image {
     width: 5vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  .block-footer {
+    height: 19vw;
+    padding: 0 5.5vw;
+  }
+  .block-footer__text__subtext {
+    font-size: 2vw;
+  }
+  .block-footer .media {
+    width: 27vw;
+  }
+  .block-footer .media__image {
+    width: 5.5vw;
   }
 }/*# sourceMappingURL=style.css.map */
