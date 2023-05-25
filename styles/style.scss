@@ -209,50 +209,63 @@ body {
     @extend %section_wrapper;
     grid-template-columns: 60% 40%;
     max-width: 100vw;
-    min-height: 895px;
-
-    &__picture {
-        display: flex;
-        align-items: center;
-    }
 
     .psychologist__picture_main {
         max-width: 100%;
+        margin-left: -6vw;
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-height: 366px;
-        margin: 264px 0 264px;
+        margin: 14vw 0 14vw;
     }
 
     &__title {
         font-family: "lato-Bold", Arial, Helvetica, sans-serif;
         src: url("../styles/fonts/Lato-Bold.woff");
         font-size: 3.5vw;
-        font-weight: 700;
-        line-height: 77px;
         text-align: right;
         color: $color_purple_dark;
-        margin: 0 0 19px 0;
+        margin: 0 0 1vw 0;
+
+        @media screen and (max-width:1199px) {
+            font-size: 5vw;
+            text-align: center;
+        }
     }
+
 
     &__subtitle {
         font-family: "lato-Semibold", Arial, Helvetica, sans-serif;
         src: url("../styles/fonts/Lato-Semibold.woff");
-        font-size: 1.6vw;
-        font-weight: 600;
-        line-height: 36px;
+        font-size: 1.5vw;
         text-align: right;
         color: $color_purple_dark;
-        margin: 0 0 55px 0;
+        margin: 0 0 2.8 0;
+
+        @media screen and (max-width:1199px) {
+            font-size: 2.8vw;
+            text-align: center;
+        }
     }
 
     &__text {
         @extend %midle_text_style;
         text-align: right;
+
+        @media screen and (min-width:576px) and (max-width:1199px) {
+            font-size: 1.8vw;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media screen and (max-width:575px) {
+            font-size: 2.5vw;
+            text-align: center;
+            margin-top: 10px;
+        }
     }
 }
 
@@ -829,33 +842,48 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100vw;
-    //min-height: 950px;
+
+    @media screen and (max-width:767px) {
+        grid-template-columns: 1fr;
+    }
 
     &__picture {
         display: grid;
         grid-template-rows: 10% 1fr;
-        //margin-top: 220px;
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        justify-content: center;
-        max-width: 607px;
-        min-height: 601px;
+        max-width: 33vw;
         gap: 1.4vw;
-        //margin: 347px 0 197px;
+
+        @media screen and (max-width:767px) {
+            max-width: 100vw;
+        }
     }
 
     &__title {
         @extend %h2_text_style;
-    }
 
+        @media screen and (min-width:576px) and (max-width:1199px) {
+            font-size: 3.5vw;
+        }
+
+        @media screen and (max-width:575px) {
+            font-size: 4vw;
+        }
+
+    }
 
     .experience__picture_secondary {
         max-width: 100%;
-        margin-left: -75px;
+        margin-left: -3.8vw;
+
+        @media screen and (max-width:767px) {
+            display: none;
+        }
     }
 
     &__paragraph {
@@ -867,14 +895,34 @@ body {
 
 .paragraph {
     &__icon {
-        max-width: 28px;
-        max-height: 28px;
-        margin-right: 13px;
+        max-width: 1.5vw;
+        max-height: 1.5vw;
+        margin-right: 0.7vw;
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            max-width: 2vw;
+            max-height: 2vw;
+        }
+
+        @media screen and (max-width:767px) {
+            max-width: 3vw;
+            max-height: 3vw;
+            margin-right: 1vw;
+        }
     }
 
     &__text {
         @extend %small_text_style;
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            font-size: 1.5vw;
+        }
+
+        @media screen and (max-width:767px) {
+            font-size: 2.5vw;
+        }
     }
+
 
     &__link {
         text-decoration: none;
@@ -885,6 +933,7 @@ body {
         text-decoration: underline;
     }
 }
+
 
 //конец блока Опыт работы Настя
 
