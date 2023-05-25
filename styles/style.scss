@@ -39,6 +39,26 @@ $margin: 7vw;
     /*border: solid black 1px;*/
 }
 
+@media(min-width:768px) and (max-width:1199px) {
+    %section_wrapper {
+        margin: 0 10% 0 10%;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    %section_wrapper {
+
+        margin: 0 10% 0 10%;
+
+    }
+}
+
+@media (max-width:576px) {
+    %section_wrapper {
+        margin: 0 10% 0 10%;
+    }
+}
+
 %h2_text_style {
     color: $color_purple_dark;
     padding: 2vw 0 4vw 0;
