@@ -1066,9 +1066,14 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 13vw;
+
         &__image {
             width: 3vw;
         }
+        
+        .media__image:hover {
+                opacity: 50%;
+            }
     }
 }
 
@@ -1087,6 +1092,7 @@ body {
 
     & .media {
         width: 25vw;
+        
         &__image {
             width: 5vw;
         }

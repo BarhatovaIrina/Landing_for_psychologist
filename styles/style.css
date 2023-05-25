@@ -765,6 +765,9 @@ body {
 .block-footer .media__image {
   width: 3vw;
 }
+.block-footer .media .media__image:hover {
+  opacity: 50%;
+}
 
 @media screen and (max-width: 767px) {
   .block-footer {
