@@ -17,21 +17,6 @@
   /*border: solid black 1px;*/
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
-@media (max-width: 576px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
 .certificates_bg .certificates__title, .experience__title, .consultation__title, .about-bg .about h2, h2 {
   color: #36094a;
   padding: 2vw 0 4vw 0;
@@ -590,39 +575,45 @@ html {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation__title {
+  .consultation {
+    margin: 0 2% 0 4%;
+  }
+  .consultation .consultation__title {
     font-size: 4.5vw;
   }
-  .consultation__wrapper {
+  .consultation .consultation__wrapper {
     grid-template-columns: 1fr;
   }
-  .consultation__wrapper .consultation__style {
+  .consultation .consultation__wrapper .consultation__style {
     font-size: 2vw;
   }
-  .consultation__wrapper .consultation__foto {
+  .consultation .consultation__wrapper .consultation__foto {
     display: none;
   }
 }
 @media (max-width: 576px) {
-  .consultation__title {
+  .consultation {
+    margin: 0 0 0 5%;
+  }
+  .consultation .consultation__title {
     font-size: 4.5vw;
   }
-  .consultation__wrapper {
+  .consultation .consultation__wrapper {
     grid-template-columns: 1fr;
   }
-  .consultation__wrapper .consultation__style {
+  .consultation .consultation__wrapper .consultation__style {
     font-size: 2.7vw;
     border-radius: 15px;
   }
-  .consultation__wrapper .consultation__main {
+  .consultation .consultation__wrapper .consultation__main {
     grid-template-columns: 1fr;
   }
-  .consultation__wrapper .consultation__foto {
+  .consultation .consultation__wrapper .consultation__foto {
     display: none;
   }
-  .consultation__wrapper .consultation__main-number__one,
-  .consultation__wrapper .consultation__main-number__two,
-  .consultation__wrapper .consultation__main-number__three {
+  .consultation .consultation__wrapper .consultation__main-number__one,
+  .consultation .consultation__wrapper .consultation__main-number__two,
+  .consultation .consultation__wrapper .consultation__main-number__three {
     display: none;
   }
 }
