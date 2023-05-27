@@ -380,13 +380,14 @@ html {
   .psychologist__picture_main {
     max-width: 100%;
     margin-left: -6vw;
+    padding-top: 5vw;
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /*margin: 14vw 0 14vw;*/
+    margin: 15vw 0 15vw;
   }
 
   &__title {
@@ -395,7 +396,7 @@ html {
     font-size: 3.5vw;
     text-align: right;
     color: $color_purple_dark;
-    margin-top: 6vw;
+    margin: 0 0 1vw 0;
 
     @media screen and (max-width: 1199px) {
       font-size: 5vw;
@@ -409,6 +410,7 @@ html {
     font-size: 1.5vw;
     text-align: right;
     color: $color_purple_dark;
+    margin: 0 0 2.8vw 0;
 
     @media screen and (max-width: 1199px) {
       font-size: 2.8vw;
