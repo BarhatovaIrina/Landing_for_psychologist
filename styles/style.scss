@@ -555,13 +555,20 @@ html {
 }
 
 @media screen and (max-width: 575px) {
-  .about {
-    & h2 {
-      font-size: $h2_font2;
+  .about-bg {
+    .about {
+      & h2 {
+        font-size: $h2_font2;
+      }
+
+      .about__items {
+        .about__item {
+          & p {
+            font-size: $midle_fonts2;
+          }
+        }
+      }
     }
-  }
-  .about__item {
-    font-size: $midle_fonts2;
   }
 }
 
@@ -755,7 +762,7 @@ html {
         }
 
         & .image {
-          margin: 0 30% 0 5vw;
+          margin: 0 28% 0 5vw;
         }
       }
     }
@@ -772,6 +779,10 @@ html {
       &__rejection {
         & p {
           font-size: $midle_fonts2;
+        }
+
+        & .image {
+          margin: 0 26% 0 5vw;
         }
       }
     }
@@ -1294,7 +1305,9 @@ html {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
   background-color: $color_purple_light;
   width: 100%;
   height: 7vw;
@@ -1305,7 +1318,7 @@ html {
     display: flex;
     // justify-content: space-between;
     width: 50%;
-    gap: 1vw;
+    gap: 0.5vw;
 
     &__subtext {
       @extend %small_text_style;
