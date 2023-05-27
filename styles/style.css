@@ -282,12 +282,13 @@ html {
 .psychologist .psychologist__picture_main {
   max-width: 100%;
   margin-left: -6vw;
+  padding-top: 5vw;
 }
 .psychologist__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /*margin: 14vw 0 14vw;*/
+  margin: 15vw 0 15vw;
 }
 .psychologist__title {
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
@@ -295,7 +296,7 @@ html {
   font-size: 3.5vw;
   text-align: right;
   color: #36094a;
-  margin-top: 6vw;
+  margin: 0 0 1vw 0;
 }
 @media screen and (max-width: 1199px) {
   .psychologist__title {
@@ -309,6 +310,7 @@ html {
   font-size: 1.5vw;
   text-align: right;
   color: #36094a;
+  margin: 0 0 2.8vw 0;
 }
 @media screen and (max-width: 1199px) {
   .psychologist__subtitle {
