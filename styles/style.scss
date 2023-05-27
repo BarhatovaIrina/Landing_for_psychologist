@@ -83,6 +83,20 @@ $margin: 6vw;
   @extend %small_text_style;
 }
 
+//размеры шрифтов для мобильной версии max-width: 767px
+$h2_font: 4.5vw;
+
+$midle_font: 3vw;
+
+$small_font: 2.5vw;
+
+//размеры шрифтов для мобильной версии max-width: 576px
+$h2_font2: 5vw;
+
+$midle_fonts2: 3.3vw;
+
+$small_fonts2: 2.8vw;
+
 // основные св-ва
 * {
   box-sizing: border-box;
@@ -332,19 +346,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked~.menu-items {
+      & input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -514,7 +528,7 @@ html {
       margin: 0 1rem;
 
       & h2 {
-        font-size: 1.5rem;
+        font-size: $h2_font;
       }
 
       .about__items {
@@ -528,7 +542,8 @@ html {
           margin: 0.3rem 0;
           padding: 0.7rem;
           width: 100%;
-          font-size: 0.8rem;
+          //font-size: 0.8rem;
+          font-size: $midle_font;
         }
 
         & .about__item:nth-child(1) {
@@ -536,6 +551,17 @@ html {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about {
+    & h2 {
+      font-size: $h2_font2;
+    }
+  }
+  .about__item {
+    font-size: $midle_fonts2;
   }
 }
 
@@ -599,10 +625,8 @@ html {
 //адаптация блока 4
 @media screen and (max-width: 767px) {
   .requests {
-    margin-bottom: 10vw;
-
     & h2 {
-      font-size: 4vw;
+      font-size: $h2_font;
       margin-bottom: 4vw;
     }
 
@@ -626,11 +650,11 @@ html {
         max-width: 100%;
 
         & h4 {
-          font-size: 2.8vw;
+          font-size: $midle_font;
         }
 
         & p {
-          font-size: 2.3vw;
+          font-size: $small_font;
         }
       }
     }
@@ -645,7 +669,24 @@ html {
   }
 }
 
-@media screen {}
+@media screen and (max-width: 575px) {
+  .requests {
+    & h2 {
+      font-size: $h2_font2;
+    }
+    .wrapper {
+      &__text {
+        & h4 {
+          font-size: $midle_fonts2;
+        }
+
+        & p {
+          font-size: $small_fonts2;
+        }
+      }
+    }
+  }
+}
 
 // блок 5, Самира
 .block5 {
@@ -687,10 +728,8 @@ html {
 //адаптация блока 5
 @media screen and (max-width: 767px) {
   .block5 {
-    margin-bottom: 10vw;
-
     & h2 {
-      font-size: 4vw;
+      font-size: $h2_font;
       margin-bottom: 4vw;
     }
 
@@ -712,7 +751,7 @@ html {
         }
 
         & p {
-          font-size: 2.8vw;
+          font-size: $midle_font;
         }
 
         & .image {
@@ -726,13 +765,13 @@ html {
 @media screen and (max-width: 576px) {
   .block5 {
     & h2 {
-      font-size: 4.5vw;
+      font-size: $h2_font2;
     }
 
     .container {
       &__rejection {
         & p {
-          font-size: 3vw;
+          font-size: $midle_fonts2;
         }
       }
     }
@@ -799,14 +838,14 @@ html {
 
 @media (min-width: 576px) and (max-width: 767px) {
   .consultation__title {
-    font-size: 4.5vw;
+    font-size: $h2_font;
   }
 
   .consultation__wrapper {
     grid-template-columns: 1fr;
 
     .consultation__style {
-      font-size: 2vw;
+      font-size: $small_font;
     }
 
     .consultation__foto {
@@ -817,14 +856,14 @@ html {
 
 @media (max-width: 576px) {
   .consultation__title {
-    font-size: 4.5vw;
+    font-size: $h2_font2;
   }
 
   .consultation__wrapper {
     grid-template-columns: 1fr;
 
     .consultation__style {
-      font-size: 2.7vw;
+      font-size: $small_fonts2;
       border-radius: 15px;
     }
 
@@ -860,7 +899,7 @@ html {
       color: white;
       padding: 10% 0 10% 0;
       font-family: "lato-Bold", Arial, Helvetica, sans-serif;
-      font-size: 2.5vw;
+      //font-size: 2.5vw;
     }
 
     .appointment__href {
@@ -920,7 +959,7 @@ html {
       grid-template-columns: 2fr 1fr;
 
       .appointment__title {
-        font-size: 4.5vw;
+        font-size: $h2_font;
       }
 
       .appointment__href {
@@ -929,7 +968,7 @@ html {
         }
 
         .appointment__href-name {
-          font-size: 4vw;
+          font-size: $h2_font;
         }
       }
     }
@@ -942,7 +981,7 @@ html {
       grid-template-columns: 2fr 1fr;
 
       .appointment__title {
-        font-size: 4.5vw;
+        font-size: $h2_font2;
       }
 
       .appointment__href {
@@ -951,7 +990,7 @@ html {
         }
 
         .appointment__href-name {
-          font-size: 4vw;
+          font-size: $h2_font2;
         }
       }
     }
@@ -996,12 +1035,15 @@ html {
     // grid-row: 1 / 3;
     grid-column: 1 / span 2;
 
-    @media screen and (min-width: 576px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 3.5vw;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: $h2_font;
     }
 
     @media screen and (max-width: 575px) {
-      font-size: 4vw;
+      font-size: $h2_font2;
     }
   }
 
@@ -1047,7 +1089,11 @@ html {
     }
 
     @media screen and (max-width: 767px) {
-      font-size: 2.5vw;
+      font-size: $small_font;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: $small_fonts2;
     }
   }
 
@@ -1082,12 +1128,16 @@ html {
     &__title {
       @extend %h2_text_style;
 
-      @media screen and (min-width: 576px) and (max-width: 1199px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         font-size: 3.5vw;
       }
 
+      @media screen and (max-width: 767px) {
+        font-size: $h2_font;
+      }
+
       @media screen and (max-width: 575px) {
-        font-size: 4vw;
+        font-size: $h2_font2;
       }
     }
 
@@ -1290,7 +1340,7 @@ html {
       flex-direction: column;
 
       &__subtext {
-        font-size: 1.8vw;
+        font-size: $small_font;
       }
     }
 
@@ -1312,7 +1362,7 @@ html {
 
     &__text {
       &__subtext {
-        font-size: 2vw;
+        font-size: $small_fonts2;
       }
     }
 
