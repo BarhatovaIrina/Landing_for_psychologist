@@ -404,7 +404,7 @@ html {
     margin: 0 1rem;
   }
   .about-bg .about h2 {
-    font-size: 1.5rem;
+    font-size: 4.5vw;
   }
   .about-bg .about .about__items {
     display: flex;
@@ -417,10 +417,18 @@ html {
     margin: 0.3rem 0;
     padding: 0.7rem;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 3vw;
   }
   .about-bg .about .about__items .about__item:nth-child(1) {
     margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .about h2 {
+    font-size: 5vw;
+  }
+  .about__item {
+    font-size: 3.3vw;
   }
 }
 .requests {
@@ -463,11 +471,8 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  .requests {
-    margin-bottom: 10vw;
-  }
   .requests h2 {
-    font-size: 4vw;
+    font-size: 4.5vw;
     margin-bottom: 4vw;
   }
   .requests .wrapper {
@@ -488,10 +493,10 @@ html {
     max-width: 100%;
   }
   .requests .wrapper__text h4 {
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
   .requests .wrapper__text p {
-    font-size: 2.3vw;
+    font-size: 2.5vw;
   }
   .requests .back4-5 {
     position: absolute;
@@ -499,6 +504,17 @@ html {
     left: 40vw;
     width: 50vw;
     height: 50vw;
+  }
+}
+@media screen and (max-width: 575px) {
+  .requests h2 {
+    font-size: 5vw;
+  }
+  .requests .wrapper__text h4 {
+    font-size: 3.3vw;
+  }
+  .requests .wrapper__text p {
+    font-size: 2.8vw;
   }
 }
 .block5 {
@@ -528,11 +544,8 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-  .block5 {
-    margin-bottom: 10vw;
-  }
   .block5 h2 {
-    font-size: 4vw;
+    font-size: 4.5vw;
     margin-bottom: 4vw;
   }
   .block5 .container {
@@ -552,7 +565,7 @@ html {
     max-width: 2vw;
   }
   .block5 .container__rejection p {
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
   .block5 .container__rejection .image {
     margin: 0 30% 0 5vw;
@@ -560,10 +573,10 @@ html {
 }
 @media screen and (max-width: 576px) {
   .block5 h2 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .block5 .container__rejection p {
-    font-size: 3vw;
+    font-size: 3.3vw;
   }
 }
 .consultation {
@@ -613,7 +626,7 @@ html {
     grid-template-columns: 1fr;
   }
   .consultation__wrapper .consultation__style {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .consultation__wrapper .consultation__foto {
     display: none;
@@ -621,13 +634,13 @@ html {
 }
 @media (max-width: 576px) {
   .consultation__title {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .consultation__wrapper {
     grid-template-columns: 1fr;
   }
   .consultation__wrapper .consultation__style {
-    font-size: 2.7vw;
+    font-size: 2.8vw;
     border-radius: 15px;
   }
   .consultation__wrapper .consultation__main {
@@ -654,7 +667,6 @@ html {
   color: white;
   padding: 10% 0 10% 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
-  font-size: 2.5vw;
 }
 .appointment .appointment__wrapper .appointment__href {
   display: grid;
@@ -704,7 +716,7 @@ html {
     max-width: 70%;
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-name {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 }
 @media (max-width: 576px) {
@@ -712,13 +724,13 @@ html {
     grid-template-columns: 2fr 1fr;
   }
   .appointment .appointment__wrapper .appointment__title {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-icon {
     max-width: 70%;
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-name {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 .experience {
@@ -752,14 +764,19 @@ html {
 .experience__title {
   grid-column: 1/span 2;
 }
-@media screen and (min-width: 576px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .experience__title {
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 767px) {
+  .experience__title {
+    font-size: 4.5vw;
+  }
+}
 @media screen and (max-width: 575px) {
   .experience__title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 .experience .experience__picture_secondary {
@@ -805,6 +822,11 @@ html {
     font-size: 2.5vw;
   }
 }
+@media screen and (max-width: 575px) {
+  .paragraph__text {
+    font-size: 2.8vw;
+  }
+}
 .paragraph__link {
   text-decoration: none;
   color: #873caa;
@@ -825,14 +847,19 @@ html {
 .certificates_bg .certificates {
   margin-bottom: 6vw;
 }
-@media screen and (min-width: 576px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .certificates_bg .certificates__title {
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 767px) {
+  .certificates_bg .certificates__title {
+    font-size: 4.5vw;
+  }
+}
 @media screen and (max-width: 575px) {
   .certificates_bg .certificates__title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 .certificates_bg .certificates__slider {
@@ -997,7 +1024,7 @@ html {
     flex-direction: column;
   }
   .block-footer__text__subtext {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
   }
   .block-footer .media {
     width: 25vw;
@@ -1012,7 +1039,7 @@ html {
     height: 19vw;
   }
   .block-footer__text__subtext {
-    font-size: 2vw;
+    font-size: 2.8vw;
   }
   .block-footer .media {
     width: 27vw;
