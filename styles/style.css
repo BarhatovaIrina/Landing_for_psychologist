@@ -856,9 +856,10 @@ html {
   position: relative;
 }
 .certificates_bg__img {
+  z-index: -1;
   width: 50%;
   position: absolute;
-  right: -2vw;
+  right: 0;
   bottom: -12vw;
 }
 .certificates_bg .certificates {
