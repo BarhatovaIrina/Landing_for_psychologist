@@ -468,9 +468,6 @@ html {
   flex-direction: column;
   justify-content: space-around;
 }
-.requests .wrapper__text h4 {
-  line-height: 1.5vw;
-}
 .requests .back4-5 {
   position: absolute;
   top: 25vw;
