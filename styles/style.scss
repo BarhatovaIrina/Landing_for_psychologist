@@ -182,7 +182,7 @@ html {
     .header__items {
       display: flex;
       align-items: center;
-      margin-right: 1.5vw; // вот тут!!!! padding - здесь лучше чем margin
+      margin-right: 1.5vw;
 
       .header__nav {
         display: flex;
@@ -1144,9 +1144,10 @@ html {
 
   &__img {
     // фоновое изображение, клякса
+    z-index: -1;
     width: 50%;
     position: absolute;
-    right: -2vw;
+    right: 0;
     bottom: -$margin * 2;
   }
 
