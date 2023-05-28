@@ -114,7 +114,6 @@ h2 {
 }
 
 html {
-
   min-width: 320px;
   scroll-behavior: smooth;
 }
@@ -362,29 +361,27 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked~.menu-items {
+      & input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
   }
 }
 
-
 //Блок 2, психолог Настя
 .psychologist {
-
   margin-bottom: 3vw;
   padding-top: 4vw;
   @extend %section_wrapper;
@@ -419,7 +416,6 @@ html {
     text-align: right;
     color: $color_purple_dark;
     margin: 0 0 1vw 0;
-
   }
 
   &__subtitle {
@@ -591,7 +587,6 @@ html {
   }
 }
 
-
 //блок 4, Самира
 .requests {
   margin-bottom: $margin;
@@ -627,7 +622,6 @@ html {
 
       & h4 {
         @extend %midle_text_style;
-        line-height: 1.5vw;
       }
 
       & p {
@@ -651,7 +645,6 @@ html {
 
 //адаптация блока 4
 @media screen and (max-width: 767px) {
-
   .requests {
     & h2 {
       font-size: $h2_font;
@@ -662,7 +655,7 @@ html {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
-      gap: 2vw;
+      gap: 3vw;
 
       &__image {
         padding-right: 5vw;
@@ -697,8 +690,6 @@ html {
   }
 }
 
-
-
 @media screen and (max-width: 575px) {
   .requests {
     & h2 {
@@ -706,7 +697,16 @@ html {
     }
 
     .wrapper {
+      gap: 4vw;
+      &__image {
+        & img {
+          width: 10vw;
+          height: 10vw;
+        }
+      }
+
       &__text {
+        height: 11vw;
         & h4 {
           font-size: $midle_fonts2;
         }
@@ -718,7 +718,6 @@ html {
     }
   }
 }
-
 
 // блок 5, Самира
 .block5 {
@@ -759,9 +758,7 @@ html {
 
 //адаптация блока 5
 @media screen and (max-width: 767px) {
-
   .block5 {
-
     & h2 {
       font-size: $h2_font;
       margin-bottom: 4vw;
@@ -797,7 +794,6 @@ html {
 }
 
 @media screen and (max-width: 576px) {
-
   .block5 {
     & h2 {
       // font-size: $h2_font2;
@@ -813,7 +809,6 @@ html {
 
         & .image {
           margin: 0 26% 0 5vw;
-
         }
       }
     }
@@ -879,7 +874,6 @@ html {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-
   .consultation__title {
     font-size: $h2_font;
   }
@@ -910,7 +904,6 @@ html {
 }
 
 @media (max-width: 576px) {
-
   .consultation__title {
     font-size: $h2_font2;
   }
@@ -959,7 +952,6 @@ html {
     @extend %section_wrapper;
     grid-template-columns: 3fr 1fr 20%;
     align-items: center;
-
 
     .appointment__title {
       color: white;
@@ -1029,7 +1021,6 @@ html {
         // font-size: 4.5vw;
       }
 
-
       .appointment__href {
         .appointment__href-icon {
           max-width: 70%;
@@ -1038,7 +1029,6 @@ html {
         .appointment__href-name {
           font-size: $h2_font;
           font-size: 4vw;
-
         }
       }
     }
@@ -1050,12 +1040,10 @@ html {
     .appointment__wrapper {
       grid-template-columns: 2fr 1fr;
 
-
       .appointment__title {
         //font-size: $h2_font2;
         font-size: 4.5vw;
       }
-
 
       .appointment__href {
         .appointment__href-icon {
@@ -1065,7 +1053,6 @@ html {
         .appointment__href-name {
           //font-size: $h2_font2;
           font-size: 4vw;
-
         }
       }
     }
@@ -1103,7 +1090,6 @@ html {
       max-width: 100vw;
     }
   }
-
 
   &__title {
     @extend %h2_text_style;
@@ -1165,7 +1151,6 @@ html {
       font-size: 1.5vw;
     }
 
-
     @media screen and (max-width: 767px) {
       // font-size: $small_font;
       font-size: 2.5vw;
@@ -1173,7 +1158,6 @@ html {
 
     @media screen and (max-width: 575px) {
       font-size: $small_fonts2;
-
     }
   }
 
@@ -1192,7 +1176,6 @@ html {
 // block 9, certificates
 .certificates_bg {
   position: relative;
-
 
   &__img {
     // фоновое изображение, клякса
@@ -1374,7 +1357,6 @@ html {
 //footer
 
 .block-footer {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1415,11 +1397,9 @@ html {
 }
 
 @media screen and (max-width: 767px) {
-
   .block-footer {
     height: 15vw;
     // padding: 0 4vw;
-
 
     &__text {
       flex-direction: column;
@@ -1442,7 +1422,6 @@ html {
 }
 
 @media screen and (max-width: 576px) {
-
   .block-footer {
     height: 19vw;
     // padding: 0 5.5vw;
