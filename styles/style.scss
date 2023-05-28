@@ -655,7 +655,7 @@ html {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
-      gap: 2vw;
+      gap: 3vw;
 
       &__image {
         padding-right: 5vw;
@@ -697,7 +697,16 @@ html {
     }
 
     .wrapper {
+      gap: 4vw;
+      &__image {
+        & img {
+          width: 10vw;
+          height: 10vw;
+        }
+      }
+
       &__text {
+        height: 11vw;
         & h4 {
           font-size: $midle_fonts2;
         }

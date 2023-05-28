@@ -485,7 +485,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    gap: 2vw;
+    gap: 3vw;
   }
   .requests .wrapper__image {
     padding-right: 5vw;
@@ -515,6 +515,16 @@ html {
 @media screen and (max-width: 575px) {
   .requests h2 {
     font-size: 5vw;
+  }
+  .requests .wrapper {
+    gap: 4vw;
+  }
+  .requests .wrapper__image img {
+    width: 10vw;
+    height: 10vw;
+  }
+  .requests .wrapper__text {
+    height: 11vw;
   }
   .requests .wrapper__text h4 {
     font-size: 3.3vw;
