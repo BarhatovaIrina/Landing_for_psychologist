@@ -76,8 +76,8 @@ html {
 *[id]:before {
   display: block;
   content: "";
-  margin-top: -94px 0 0;
-  height: 94px;
+  margin-top: -85px 0 0;
+  height: 85px;
 }
 
 .header {
@@ -179,6 +179,13 @@ html {
     color: white;
     align-items: center;
     justify-content: space-around;
+  }
+  .header .mobile-header__btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .header .mobile-header__btn img {
+    margin-right: 10px;
   }
   .header .mobile-header__btn img {
     height: 1rem;
