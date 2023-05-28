@@ -109,6 +109,13 @@ html {
   align-items: center;
   justify-content: space-evenly;
 }
+.header .big-header .header__btn a {
+  text-decoration: none;
+  color: white;
+}
+.header .big-header .header__btn img {
+  margin-right: 10px;
+}
 .header .big-header .header__items {
   display: flex;
   align-items: center;

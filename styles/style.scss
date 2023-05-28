@@ -165,12 +165,24 @@ html {
       color: white;
       align-items: center;
       justify-content: space-evenly;
+
+      // Катя, добавила только это - чтобы сделать кнопку кликабельной, можно изменить на свое усмотрение
+      & a {
+        text-decoration: none;
+        color: white;
+      }
+
+      & img {
+        margin-right: 10px;
+      }
+
+      /////
     }
 
     .header__items {
       display: flex;
       align-items: center;
-      margin-right: 1.5vw;
+      margin-right: 1.5vw; // вот тут!!!! padding - здесь лучше чем margin
 
       .header__nav {
         display: flex;
@@ -346,19 +358,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked ~ .menu-items {
+      & input[type="checkbox"]:checked~.menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -685,6 +697,7 @@ html {
     & h2 {
       font-size: $h2_font2;
     }
+
     .wrapper {
       &__text {
         & h4 {
@@ -1053,6 +1066,7 @@ html {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       font-size: 3.5vw;
     }
+
     @media screen and (max-width: 767px) {
       font-size: $h2_font;
     }
