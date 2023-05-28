@@ -361,19 +361,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked ~ .menu-items {
+      & input[type="checkbox"]:checked~.menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -698,6 +698,7 @@ html {
 
     .wrapper {
       gap: 4vw;
+
       &__image {
         & img {
           width: 10vw;
@@ -707,6 +708,7 @@ html {
 
       &__text {
         height: 11vw;
+
         & h4 {
           font-size: $midle_fonts2;
         }
@@ -1371,6 +1373,7 @@ html {
     display: flex;
     width: 50%;
     gap: 0.5vw;
+    justify-content: flex-start;
 
     &__subtext {
       @extend %small_text_style;
@@ -1380,9 +1383,7 @@ html {
   & .media {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     justify-content: flex-end;
-    // width: 13vw;
     width: 50%;
     gap: 1.5vw;
 
@@ -1399,7 +1400,9 @@ html {
 @media screen and (max-width: 767px) {
   .block-footer {
     height: 15vw;
-    // padding: 0 4vw;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: space-between;
 
     &__text {
       flex-direction: column;
@@ -1411,7 +1414,7 @@ html {
     }
 
     & .media {
-      width: 25vw;
+      width: 50%;
       gap: 3vw;
 
       &__image {
@@ -1424,17 +1427,14 @@ html {
 @media screen and (max-width: 576px) {
   .block-footer {
     height: 19vw;
-    // padding: 0 5.5vw;
 
     &__text {
       &__subtext {
-        //font-size: $small_fonts2;
         font-size: 2vw;
       }
     }
 
     & .media {
-      width: 27vw;
       gap: 3vw;
 
       &__image {
