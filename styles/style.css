@@ -1037,6 +1037,7 @@ html {
   display: flex;
   width: 50%;
   gap: 0.5vw;
+  justify-content: flex-start;
 }
 .block-footer .media {
   display: flex;
@@ -1055,6 +1056,9 @@ html {
 @media screen and (max-width: 767px) {
   .block-footer {
     height: 15vw;
+    padding: 0 4vw;
+    align-items: center;
+    justify-content: space-between;
   }
   .block-footer__text {
     flex-direction: column;
@@ -1063,7 +1067,7 @@ html {
     font-size: 1.8vw;
   }
   .block-footer .media {
-    width: 25vw;
+    width: 50%;
     gap: 3vw;
   }
   .block-footer .media__image {
@@ -1078,7 +1082,6 @@ html {
     font-size: 2vw;
   }
   .block-footer .media {
-    width: 27vw;
     gap: 3vw;
   }
   .block-footer .media__image {
