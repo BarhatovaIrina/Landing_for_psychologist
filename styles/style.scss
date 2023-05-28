@@ -161,10 +161,10 @@ html {
       border: 0;
       height: 85%;
       width: 85px;
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: white;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
     .header__items {
@@ -266,7 +266,7 @@ html {
         height: 1.5rem;
         width: 2rem;
         position: absolute;
-        top: 0.5rem;
+        top: 0.8rem;
         right: 1rem;
         z-index: 6;
         display: flex;
@@ -297,7 +297,7 @@ html {
 
       .menu-items {
         position: absolute;
-        top: 2.5rem;
+        top: 2.7rem;
         // left: 9.5vw;
         right: 0;
         max-width: 400px;
@@ -368,13 +368,17 @@ html {
 //Блок 2, психолог Настя
 .psychologist {
   margin-bottom: 3vw;
-  padding-top: 5vw;
+  padding-top: 4vw;
   @extend %section_wrapper;
   grid-template-columns: 60% 40%;
   max-width: 100vw;
 
   @media screen and (max-width: 1023px) {
     padding-top: 7vw;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 8vw;
   }
 
   .psychologist__picture_main {
