@@ -17,11 +17,6 @@
   /*border: solid black 1px;*/
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
 @media (min-width: 576px) and (max-width: 767px) {
   .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
     margin: 0 10% 0 10%;
@@ -317,19 +312,12 @@ html {
   color: #36094a;
   margin: 0 0 1vw 0;
 }
-@media screen and (max-width: 1199px) {
-  .psychologist__title {
-    font-size: 5vw;
-    text-align: center;
-  }
-}
 .psychologist__subtitle {
   font-family: "lato-Semibold", Arial, Helvetica, sans-serif;
   src: url("../styles/fonts/Lato-Semibold.woff");
   font-size: 1.5vw;
   text-align: right;
   color: #36094a;
-  margin: 0 0 2.8vw 0;
 }
 @media screen and (max-width: 1199px) {
   .psychologist__subtitle {
@@ -594,10 +582,10 @@ html {
 }
 @media screen and (max-width: 576px) {
   .block5 h2 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .block5 .container__rejection p {
-    font-size: 3.3vw;
+    font-size: 3vw;
   }
   .block5 .container__rejection .image {
     margin: 0 26% 0 5vw;
@@ -646,13 +634,22 @@ html {
   .consultation__title {
     font-size: 4.5vw;
   }
-  .consultation__wrapper {
-    grid-template-columns: 1fr;
+  .consultation {
+    margin: 0 2% 0 4%;
   }
-  .consultation__wrapper .consultation__style {
+  .consultation .consultation__style {
     font-size: 2.5vw;
   }
-  .consultation__wrapper .consultation__foto {
+  .consultation .consultation__title {
+    font-size: 4.5vw;
+  }
+  .consultation .consultation__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .consultation .consultation__wrapper .consultation__style {
+    font-size: 2vw;
+  }
+  .consultation .consultation__wrapper .consultation__foto {
     display: none;
   }
 }
@@ -660,22 +657,28 @@ html {
   .consultation__title {
     font-size: 5vw;
   }
-  .consultation__wrapper {
-    grid-template-columns: 1fr;
+  .consultation {
+    margin: 0 0 0 5%;
   }
-  .consultation__wrapper .consultation__style {
+  .consultation .consultation__style {
     font-size: 2.8vw;
     border-radius: 15px;
   }
-  .consultation__wrapper .consultation__main {
+  .consultation .consultation__title {
+    font-size: 4.5vw;
+  }
+  .consultation .consultation__wrapper {
     grid-template-columns: 1fr;
   }
-  .consultation__wrapper .consultation__foto {
+  .consultation .consultation__wrapper .consultation__main {
+    grid-template-columns: 1fr;
+  }
+  .consultation .consultation__wrapper .consultation__foto {
     display: none;
   }
-  .consultation__wrapper .consultation__main-number__one,
-  .consultation__wrapper .consultation__main-number__two,
-  .consultation__wrapper .consultation__main-number__three {
+  .consultation .consultation__wrapper .consultation__main-number__one,
+  .consultation .consultation__wrapper .consultation__main-number__two,
+  .consultation .consultation__wrapper .consultation__main-number__three {
     display: none;
   }
 }
@@ -741,6 +744,7 @@ html {
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-name {
     font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 @media (max-width: 576px) {
@@ -748,13 +752,13 @@ html {
     grid-template-columns: 2fr 1fr;
   }
   .appointment .appointment__wrapper .appointment__title {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-icon {
     max-width: 70%;
   }
   .appointment .appointment__wrapper .appointment__href .appointment__href-name {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 .experience {
@@ -884,7 +888,7 @@ html {
 }
 @media screen and (max-width: 575px) {
   .certificates_bg .certificates__title {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 .certificates_bg .certificates__slider {
@@ -1012,17 +1016,15 @@ html {
   }
 }
 .block-footer {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
-  z-index: 1;
   background-color: #fcf6ff;
+  z-index: 1;
   width: 100%;
   height: 7vw;
   padding: 0 2vw;
-  margin: 0;
 }
 .block-footer__text {
   display: flex;
@@ -1051,7 +1053,7 @@ html {
     flex-direction: column;
   }
   .block-footer__text__subtext {
-    font-size: 2.5vw;
+    font-size: 1.8vw;
   }
   .block-footer .media {
     width: 25vw;
@@ -1066,7 +1068,7 @@ html {
     height: 19vw;
   }
   .block-footer__text__subtext {
-    font-size: 2.8vw;
+    font-size: 2vw;
   }
   .block-footer .media {
     width: 27vw;
