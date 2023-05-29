@@ -27,7 +27,7 @@
     margin: 0 10% 0 10%;
   }
 }
-.certificates_bg .certificates__title, .experience__title, .consultation__title, .about-bg .about h2, h2 {
+.certificates_bg .certificates__title, .experience__title, .consultation__title, .block5 h2, .requests h2, .about-bg .about h2, h2 {
   color: #36094a;
   padding: 2vw 0 4vw 0;
   font-family: "lato-Bold", Arial, Helvetica, sans-serif;
@@ -37,13 +37,13 @@
 .block5 .container__rejection p, .requests .wrapper__text h4, .about-bg .about .about__items .about__item, .psychologist__text, .text24 {
   color: #36094a;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
 }
 
 .block-footer__text__subtext, .paragraph__text, .consultation .consultation__style, .requests .wrapper p, .requests .wrapper__text p, .text18 {
   color: #36094a;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 1.25vw;
 }
 
 * {
@@ -78,7 +78,7 @@ html {
 .header {
   background-color: #fcf6ff;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   box-shadow: 0px 4px 21px rgba(54, 9, 74, 0.12);
   width: 100%;
   position: fixed;
@@ -93,23 +93,20 @@ html {
   align-items: center;
 }
 .header .big-header .header__btn {
-  display: flex;
   background-color: #873caa;
-  border-radius: 15px;
+  border-radius: 30px;
   border: 0;
-  height: 85%;
+  height: 2.3rem;
   width: 85px;
   font-size: 1.5rem;
   color: white;
-  align-items: center;
-  justify-content: space-evenly;
 }
 .header .big-header .header__btn a {
+  display: flex;
   text-decoration: none;
   color: white;
-}
-.header .big-header .header__btn img {
-  margin-right: 10px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .header .big-header .header__items {
   display: flex;
@@ -181,8 +178,6 @@ html {
   }
   .header .mobile-header__btn img {
     margin-right: 10px;
-  }
-  .header .mobile-header__btn img {
     height: 1rem;
   }
   .header .mobile-header .checkbox {
@@ -227,8 +222,8 @@ html {
     position: absolute;
     top: 2.7rem;
     right: 0;
-    max-width: 400px;
-    width: 90%;
+    width: 100%;
+    height: 100vh;
     transform: translate(150%);
     transition: transform 0.5s ease-in-out;
     background-color: #fcf6ff;
@@ -244,7 +239,7 @@ html {
     list-style-type: none;
   }
   .header .mobile-header .menu-items__nav ul li {
-    padding: 1vw;
+    padding: 3vw;
   }
   .header .mobile-header .menu-items__nav ul a {
     text-decoration: none;
@@ -352,6 +347,16 @@ html {
   justify-content: center;
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-bg .about h2 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-bg .about h2 {
+    font-size: 4.5vw;
+  }
+}
 .about-bg .about .about__items {
   display: grid;
   grid-template-columns: 2.42240727% 20.1362604% 7.64572294% 11.5064345% 6.28311885% 2.27100681% 8.0999243% 3.02800908% 25.662377% 2.72520818% 10.1438304%;
@@ -387,10 +392,16 @@ html {
   grid-row: 7/10;
 }
 .about-bg .about .about__items .about__item {
+  font-size: 1.4rem;
   background-color: #fcf6ff;
   border-radius: 25px;
   box-shadow: 5px 7px 20px rgba(54, 9, 74, 0.15);
   padding: 1.7rem 1.8rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-bg .about .about__items .about__item {
+    font-size: 1rem;
+  }
 }
 .about-bg .about .about__items p {
   margin: 0;
@@ -443,6 +454,16 @@ html {
 .requests {
   margin-bottom: 6vw;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .requests h2 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .requests h2 {
+    font-size: 4.5vw;
+  }
 }
 .requests .wrapper {
   display: grid;
@@ -533,8 +554,26 @@ html {
     font-size: 2.8vw;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .requests .wrapper__text h4 {
+    font-size: 1.25rem;
+  }
+  .requests .wrapper__text p {
+    font-size: 1rem;
+  }
+}
 .block5 {
   margin-bottom: 6vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .block5 h2 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block5 h2 {
+    font-size: 4.5vw;
+  }
 }
 .block5 .container {
   display: flex;
@@ -551,6 +590,11 @@ html {
 .block5 .container__rejection img {
   margin: 0 5.5vw 0 2vw;
   max-width: 2vw;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .block5 .container__rejection p {
+    font-size: 1.85vw;
+  }
 }
 .block5 .container__rejection .image {
   margin: 0 4vw 0 2vw;
@@ -589,7 +633,7 @@ html {
 }
 @media screen and (max-width: 576px) {
   .block5 h2 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .block5 .container__rejection p {
     font-size: 3vw;
@@ -600,6 +644,11 @@ html {
 }
 .consultation {
   margin-bottom: 6vw;
+}
+@media screen and (max-width: 767px) {
+  .consultation__title {
+    font-size: 4.5vw;
+  }
 }
 .consultation__wrapper {
   display: grid;
@@ -631,16 +680,16 @@ html {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .consultation__title {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .consultation__wrapper .consultation__style {
-    font-size: 1.5vw;
+    font-size: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation__title {
-    font-size: 4.5vw;
-  }
+  /*.consultation__title {
+    font-size: $h2_font;
+  }*/
   .consultation {
     margin: 0 2% 0 4%;
   }
@@ -661,9 +710,6 @@ html {
   }
 }
 @media (max-width: 576px) {
-  .consultation__title {
-    font-size: 5vw;
-  }
   .consultation {
     margin: 0 0 0 5%;
   }
@@ -672,7 +718,7 @@ html {
     border-radius: 15px;
   }
   .consultation .consultation__title {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
   .consultation .consultation__wrapper {
     grid-template-columns: 1fr;
@@ -849,7 +895,7 @@ html {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .paragraph__text {
-    font-size: 1.5vw;
+    font-size: 1.25rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -895,7 +941,7 @@ html {
 }
 @media screen and (max-width: 575px) {
   .certificates_bg .certificates__title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 .certificates_bg .certificates__slider {

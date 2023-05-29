@@ -60,13 +60,13 @@ $margin: 6vw;
 %midle_text_style {
   color: $color_purple_dark;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
 }
 
 %small_text_style {
   color: $color_purple_dark;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 1.25vw;
 }
 
 .text24 {
@@ -132,7 +132,7 @@ html {
   background-color: $color_purple_light;
   font-family: "lato-Regular", Arial, Helvetica, sans-serif;
   // font-size: 1.25rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   box-shadow: $shadow_header;
 
   width: 100%;
@@ -149,25 +149,21 @@ html {
     align-items: center;
 
     .header__btn {
-      display: flex;
       background-color: $color_purple_bright;
-      border-radius: 15px;
+      border-radius: 30px;
       border: 0;
-      height: 85%;
+      height: 2.3rem;
       width: 85px;
       font-size: 1.5rem;
       color: white;
-      align-items: center;
-      justify-content: space-evenly;
 
       // Катя, добавила только это - чтобы сделать кнопку кликабельной, можно изменить на свое усмотрение
       & a {
+        display: flex;
         text-decoration: none;
         color: white;
-      }
-
-      & img {
-        margin-right: 10px;
+        align-items: center;
+        justify-content: space-evenly;
       }
 
       /////
@@ -259,9 +255,6 @@ html {
 
         & img {
           margin-right: 10px;
-        }
-
-        & img {
           height: 1rem;
         }
       }
@@ -315,8 +308,8 @@ html {
         top: 2.7rem;
         // left: 9.5vw;
         right: 0;
-        max-width: 400px;
-        width: 90%;
+        width: 100%;
+        height: 100vh;
         transform: translate(150%);
         transition: transform 0.5s ease-in-out;
         background-color: $color_purple_light;
@@ -332,7 +325,7 @@ html {
             list-style-type: none;
 
             & li {
-              padding: 1vw;
+              padding: 3vw;
             }
 
             & a {
@@ -361,19 +354,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked~.menu-items {
+      & input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -465,6 +458,14 @@ html {
 
     & h2 {
       @extend %h2_text_style;
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 3.5vw;
+      }
+
+      @media screen and (max-width: 767px) {
+        font-size: $h2_font;
+      }
     }
 
     .about__items {
@@ -509,10 +510,15 @@ html {
 
       .about__item {
         @extend %midle_text_style;
+        font-size: 1.4rem;
         background-color: $color_purple_light;
         border-radius: 25px;
         box-shadow: $shadow_main;
         padding: 1.7rem 1.8rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+          font-size: 1rem;
+        }
       }
 
       & p {
@@ -592,6 +598,18 @@ html {
   margin-bottom: $margin;
   @extend %section_wrapper;
   position: relative;
+
+  & h2 {
+    @extend %h2_text_style;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 3.5vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: $h2_font;
+    }
+  }
 
   .wrapper {
     display: grid;
@@ -721,10 +739,38 @@ html {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .requests {
+    .wrapper {
+      &__text {
+        & h4 {
+          font-size: 1.25rem;
+        }
+
+        & p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 // блок 5, Самира
 .block5 {
   margin-bottom: $margin;
   @extend %section_wrapper;
+
+  & h2 {
+    @extend %h2_text_style;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 3.5vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: $h2_font;
+    }
+  }
 
   .container {
     display: flex;
@@ -745,6 +791,10 @@ html {
 
       & p {
         @extend %midle_text_style;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+          font-size: 1.85vw;
+        }
       }
 
       & .image {
@@ -798,8 +848,8 @@ html {
 @media screen and (max-width: 576px) {
   .block5 {
     & h2 {
-      // font-size: $h2_font2;
-      font-size: 4.5vw;
+      font-size: $h2_font2;
+      //font-size: 4.5vw;
     }
 
     .container {
@@ -825,6 +875,10 @@ html {
 
   &__title {
     @extend %h2_text_style;
+
+    @media screen and (max-width: 767px) {
+      font-size: $h2_font;
+    }
   }
 
   &__wrapper {
@@ -865,20 +919,20 @@ html {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .consultation__title {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .consultation__wrapper {
     .consultation__style {
-      font-size: 1.5vw;
+      font-size: 1rem;
     }
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .consultation__title {
+  /*.consultation__title {
     font-size: $h2_font;
-  }
+  }*/
 
   .consultation {
     margin: 0 2% 0 4%; // Anna
@@ -888,7 +942,7 @@ html {
     }
 
     .consultation__title {
-      font-size: 4.5vw;
+      font-size: $h2_font;
     }
 
     .consultation__wrapper {
@@ -906,10 +960,6 @@ html {
 }
 
 @media (max-width: 576px) {
-  .consultation__title {
-    font-size: $h2_font2;
-  }
-
   .consultation {
     margin: 0 0 0 5%;
 
@@ -920,7 +970,7 @@ html {
     }
 
     .consultation__title {
-      font-size: 4.5vw;
+      font-size: $h2_font2;
     }
 
     .consultation__wrapper {
@@ -1150,7 +1200,7 @@ html {
     @extend %small_text_style;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font-size: 1.5vw;
+      font-size: 1.25rem;
     }
 
     @media screen and (max-width: 767px) {
@@ -1204,8 +1254,8 @@ html {
       }
 
       @media screen and (max-width: 575px) {
-        // font-size: $h2_font2;
-        font-size: 4vw;
+        font-size: $h2_font2;
+        //font-size: 4vw;
       }
     }
 
