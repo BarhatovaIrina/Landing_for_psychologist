@@ -38,17 +38,6 @@ $margin: 6vw;
   /*border: solid black 1px;*/
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  %section_wrapper {
-    margin: 0 10% 0 10%;
-  }
-}
-
-@media (max-width: 575px) {
-  %section_wrapper {
-    margin: 0 10% 0 10%;
-  }
-}
 
 %h2_text_style {
   color: $color_purple_dark;
@@ -903,6 +892,11 @@ html {
     padding: 5% 9% 5% 8%;
   }
 
+  .consultation__main-text__two {
+
+    margin-bottom: 0.75rem;
+  }
+
   &__foto {
     display: grid;
     max-width: 100%;
@@ -925,6 +919,16 @@ html {
   .consultation__wrapper {
     .consultation__style {
       font-size: 1rem;
+    }
+
+    .consultation__main-text__two {
+
+      margin-bottom: 1rem;
+    }
+
+    .consultation__main-text__one {
+
+      margin-bottom: 1rem;
     }
   }
 }
@@ -955,9 +959,17 @@ html {
       .consultation__foto {
         display: none;
       }
+
+      .consultation__main-text__two {
+
+        margin-bottom: 0.75rem;
+      }
+
+
     }
   }
 }
+
 
 @media (max-width: 575px) {
   .consultation {
@@ -988,6 +1000,16 @@ html {
       .consultation__main-number__two,
       .consultation__main-number__three {
         display: none;
+      }
+
+      .consultation__main-text__two {
+
+        margin-bottom: 1rem;
+      }
+
+      .consultation__main-text__one {
+
+        margin-bottom: 1.2rem;
       }
     }
   }

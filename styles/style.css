@@ -17,16 +17,6 @@
   /*border: solid black 1px;*/
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
-@media (max-width: 575px) {
-  .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
-    margin: 0 10% 0 10%;
-  }
-}
 .certificates_bg .certificates__title, .experience__title, .consultation__title, .block5 h2, .requests h2, .about-bg .about h2, h2 {
   color: #36094a;
   padding: 2vw 0 4vw 0;
@@ -668,6 +658,9 @@ html {
   border-radius: 27px;
   padding: 5% 9% 5% 8%;
 }
+.consultation .consultation__main-text__two {
+  margin-bottom: 0.75rem;
+}
 .consultation__foto {
   display: grid;
   max-width: 100%;
@@ -684,6 +677,12 @@ html {
   }
   .consultation__wrapper .consultation__style {
     font-size: 1rem;
+  }
+  .consultation__wrapper .consultation__main-text__two {
+    margin-bottom: 1rem;
+  }
+  .consultation__wrapper .consultation__main-text__one {
+    margin-bottom: 1rem;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -707,6 +706,9 @@ html {
   }
   .consultation .consultation__wrapper .consultation__foto {
     display: none;
+  }
+  .consultation .consultation__wrapper .consultation__main-text__two {
+    margin-bottom: 0.75rem;
   }
 }
 @media (max-width: 575px) {
@@ -733,6 +735,12 @@ html {
   .consultation .consultation__wrapper .consultation__main-number__two,
   .consultation .consultation__wrapper .consultation__main-number__three {
     display: none;
+  }
+  .consultation .consultation__wrapper .consultation__main-text__two {
+    margin-bottom: 1rem;
+  }
+  .consultation .consultation__wrapper .consultation__main-text__one {
+    margin-bottom: 1.2rem;
   }
 }
 .appointment {
