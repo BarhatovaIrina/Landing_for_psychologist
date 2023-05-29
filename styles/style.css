@@ -22,7 +22,7 @@
     margin: 0 10% 0 10%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .certificates_bg .certificates, .experience, .appointment .appointment__wrapper, .consultation, .block5, .requests, .about-bg .about, .psychologist {
     margin: 0 10% 0 10%;
   }
@@ -631,7 +631,7 @@ html {
     margin: 0 28% 0 5vw;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .block5 h2 {
     font-size: 5vw;
   }
@@ -709,7 +709,7 @@ html {
     display: none;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .consultation {
     margin: 0 0 0 5%;
   }
@@ -800,7 +800,7 @@ html {
     font-size: 4vw;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .appointment .appointment__wrapper {
     grid-template-columns: 2fr 1fr;
   }
@@ -821,7 +821,7 @@ html {
   grid-template-columns: 1fr 1fr;
   max-width: 100vw;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .experience {
     grid-template-columns: 1fr;
   }
@@ -834,10 +834,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 33vw;
+  max-width: 40vw;
   gap: 1.4vw;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .experience__list {
     max-width: 100vw;
   }
@@ -864,7 +864,7 @@ html {
   max-width: 100%;
   margin-left: -3.8vw;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .experience .experience__picture_secondary {
     display: none;
   }
@@ -913,7 +913,7 @@ html {
   color: #873caa;
 }
 .paragraph__link:hover {
-  text-decoration: underline;
+  opacity: 65%;
 }
 
 .certificates_bg {
@@ -1009,12 +1009,12 @@ html {
 .certificates_bg .certificates__slider__button-left img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .certificates_bg .certificates__slider__button-left {
     width: 7vw;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .certificates_bg .certificates__slider__button-left {
     width: 5.5vw;
   }
@@ -1031,12 +1031,12 @@ html {
 .certificates_bg .certificates__slider__button-right img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .certificates_bg .certificates__slider__button-right {
     width: 7vw;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .certificates_bg .certificates__slider__button-right {
     width: 5.5vw;
   }
@@ -1120,7 +1120,7 @@ html {
     width: 5vw;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .block-footer {
     height: 19vw;
   }
