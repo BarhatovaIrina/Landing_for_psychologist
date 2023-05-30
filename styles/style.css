@@ -835,6 +835,9 @@ html {
   display: grid;
   grid-template-rows: 10% 1fr;
 }
+.experience__picture img {
+  width: 80%;
+}
 .experience__list {
   display: flex;
   flex-direction: column;

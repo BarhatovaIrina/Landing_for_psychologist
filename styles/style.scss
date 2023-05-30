@@ -342,19 +342,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked ~ .menu-items {
+      & input[type="checkbox"]:checked~.menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -1147,6 +1147,13 @@ html {
   &__picture {
     display: grid;
     grid-template-rows: 10% 1fr;
+
+    ////////// уменьшила размер фото 
+    & img {
+      width: 80%;
+    }
+
+    ///////
   }
 
   &__list {
