@@ -38,7 +38,6 @@ $margin: 6vw;
   /*border: solid black 1px;*/
 }
 
-
 %h2_text_style {
   color: $color_purple_dark;
   padding: 2vw 0 4vw 0;
@@ -343,19 +342,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked~.menu-items {
+      & input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -639,7 +638,6 @@ html {
         @extend %small_text_style;
       }
     }
-
   }
 
   .back4-5 {
@@ -885,7 +883,8 @@ html {
   & .consultation__main {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 0.5rem;
     margin-right: 5%;
     align-items: center;
   }
@@ -899,7 +898,6 @@ html {
   }
 
   .consultation__main-text__two {
-
     margin-bottom: 0.75rem;
   }
 
@@ -928,12 +926,10 @@ html {
     }
 
     .consultation__main-text__two {
-
       margin-bottom: 1rem;
     }
 
     .consultation__main-text__one {
-
       margin-bottom: 1rem;
     }
   }
@@ -967,15 +963,11 @@ html {
       }
 
       .consultation__main-text__two {
-
         margin-bottom: 0.75rem;
       }
-
-
     }
   }
 }
-
 
 @media (max-width: 575px) {
   .consultation {
@@ -1009,12 +1001,10 @@ html {
       }
 
       .consultation__main-text__two {
-
         margin-bottom: 1rem;
       }
 
       .consultation__main-text__one {
-
         margin-bottom: 1.2rem;
       }
     }
@@ -1211,7 +1201,6 @@ html {
     max-width: 1.5vw;
     max-height: 1.5vw;
     margin-right: 0.7vw;
-
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       max-width: 2vw;
