@@ -209,6 +209,9 @@ html {
     transition: transform 0.4s ease-in-out;
   }
   .header .mobile-header .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 2.7rem;
     right: 0;
@@ -219,17 +222,25 @@ html {
     background-color: #fcf6ff;
     z-index: 5;
     border-bottom-left-radius: 10px;
+    font-size: 1.3rem;
   }
   .header .mobile-header .menu-items__nav {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;*/
+    margin-top: -9rem;
   }
   .header .mobile-header .menu-items__nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
   }
   .header .mobile-header .menu-items__nav ul li {
-    padding: 3vw;
+    padding: 5vw;
   }
   .header .mobile-header .menu-items__nav ul a {
     text-decoration: none;
@@ -240,14 +251,12 @@ html {
   }
   .header .mobile-header .menu-items__contacts {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 43px;
-    margin-bottom: 1.5rem;
+    justify-content: center;
   }
   .header .mobile-header .menu-items__contacts a {
     text-decoration: none;
     color: #36094a;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .header .mobile-header input[type=checkbox]:checked ~ .menu-items {
     transform: translateX(0);
@@ -387,6 +396,7 @@ html {
   border-radius: 25px;
   box-shadow: 5px 7px 20px rgba(54, 9, 74, 0.15);
   padding: 1.7rem 1.8rem;
+  text-indent: 1rem;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-bg .about .about__items .about__item {
