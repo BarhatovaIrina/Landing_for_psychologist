@@ -508,6 +508,10 @@ html {
   justify-content: space-around;
   align-items: space-around;
 }
+.requests .wrapper__text h4 {
+  line-height: 1.4rem;
+  margin-bottom: 0.5rem;
+}
 .requests .back4-5 {
   position: absolute;
   top: 25vw;
