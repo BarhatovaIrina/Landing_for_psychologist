@@ -659,6 +659,9 @@ html {
 
       & h4 {
         @extend %midle_text_style;
+        line-height: 1.4rem;
+        margin-bottom: 0.5rem;
+
       }
 
       & p {
