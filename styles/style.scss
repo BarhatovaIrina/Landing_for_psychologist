@@ -292,6 +292,10 @@ html {
       }
 
       .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //align-items: center;
         position: absolute;
         top: 2.7rem;
         // left: 9.5vw;
@@ -303,17 +307,25 @@ html {
         background-color: $color_purple_light;
         z-index: 5;
         border-bottom-left-radius: 10px;
+        font-size: 1.3rem;
 
         &__nav {
-          display: flex;
+          /*display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: center;
+          align-items: center;*/
+          margin-top: -9rem;
 
           & ul {
             list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2rem;
 
             & li {
-              padding: 3vw;
+              padding: 5vw;
             }
 
             & a {
@@ -329,32 +341,30 @@ html {
 
         &__contacts {
           display: flex;
-          // justify-content: center;
-          justify-content: flex-start;
-          margin-left: 43px;
-          margin-bottom: 1.5rem;
+          justify-content: center;
+          //margin-top: -2rem;
 
           & a {
             text-decoration: none;
             color: $color_purple_dark;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
         }
       }
 
-      & input[type="checkbox"]:checked~.menu-items {
+      & input[type="checkbox"]:checked ~ .menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -503,6 +513,7 @@ html {
         border-radius: 25px;
         box-shadow: $shadow_main;
         padding: 1.7rem 1.8rem;
+        text-indent: 1rem;
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
           font-size: 1rem;
@@ -786,7 +797,6 @@ html {
           font-size: 1.85vw;
         }
       }
-
     }
 
     &__rejection:hover {
@@ -825,7 +835,6 @@ html {
           font-size: $midle_font;
           width: 80%;
         }
-
       }
     }
   }
@@ -1142,7 +1151,7 @@ html {
     display: grid;
     grid-template-rows: 10% 1fr;
 
-    ////////// уменьшила размер фото 
+    ////////// уменьшила размер фото
     & img {
       width: 80%;
     }
