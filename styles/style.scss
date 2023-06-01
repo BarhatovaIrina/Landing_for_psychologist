@@ -352,19 +352,19 @@ html {
         }
       }
 
-      & input[type="checkbox"]:checked ~ .menu-items {
+      & input[type="checkbox"]:checked~.menu-items {
         transform: translateX(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line1 {
         transform: rotate(45deg);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line2 {
         transform: scaleY(0);
       }
 
-      & input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      & input[type="checkbox"]:checked~.hamburger-lines .line3 {
         transform: rotate(-45deg);
       }
     }
@@ -407,6 +407,11 @@ html {
     text-align: right;
     color: $color_purple_dark;
     margin: 0 0 1vw 0;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 4.8vw;
+      text-align: center;
+    }
   }
 
   &__subtitle {
@@ -415,10 +420,20 @@ html {
     font-size: 1.5vw;
     text-align: right;
     color: $color_purple_dark;
-    //     margin: 0 0 2.8vw 0;
+    //     margin: 0 0 2.8vw 0;   
 
-    @media screen and (max-width: 1199px) {
-      font-size: 2.8vw;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 2.6vw;
+      text-align: center;
+    }
+
+    @media screen and (min-width:576px) and (max-width: 767px) {
+      font-size: 3.2vw;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 3.5vw;
       text-align: center;
     }
   }
@@ -428,13 +443,14 @@ html {
     text-align: right;
 
     @media screen and (min-width: 576px) and (max-width: 1199px) {
-      font-size: 1.8vw;
+      //font-size: 2.5vw;
+      font-size: 1.1rem;
       text-align: center;
       margin-top: 10px;
     }
 
     @media screen and (max-width: 575px) {
-      font-size: 2.5vw;
+      font-size: 3vw;
       text-align: center;
       margin-top: 10px;
     }

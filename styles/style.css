@@ -306,6 +306,12 @@ html {
   color: #36094a;
   margin: 0 0 1vw 0;
 }
+@media screen and (max-width: 1199px) {
+  .psychologist__title {
+    font-size: 4.8vw;
+    text-align: center;
+  }
+}
 .psychologist__subtitle {
   font-family: "lato-Semibold", Arial, Helvetica, sans-serif;
   src: url("../styles/fonts/Lato-Semibold.woff");
@@ -313,9 +319,21 @@ html {
   text-align: right;
   color: #36094a;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .psychologist__subtitle {
-    font-size: 2.8vw;
+    font-size: 2.6vw;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .psychologist__subtitle {
+    font-size: 3.2vw;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .psychologist__subtitle {
+    font-size: 3.5vw;
     text-align: center;
   }
 }
@@ -324,14 +342,14 @@ html {
 }
 @media screen and (min-width: 576px) and (max-width: 1199px) {
   .psychologist__text {
-    font-size: 1.8vw;
+    font-size: 1.1rem;
     text-align: center;
     margin-top: 10px;
   }
 }
 @media screen and (max-width: 575px) {
   .psychologist__text {
-    font-size: 2.5vw;
+    font-size: 3vw;
     text-align: center;
     margin-top: 10px;
   }
