@@ -87,9 +87,9 @@ html {
   border-radius: 30px;
   border: 0;
   height: 2.3rem;
-  width: 85px;
   font-size: 1.5rem;
   color: white;
+  padding: 0 15px;
 }
 .header .big-header .header__btn a {
   display: flex;
@@ -97,6 +97,10 @@ html {
   color: white;
   align-items: center;
   justify-content: space-evenly;
+}
+.header .big-header .header__btn a img {
+  width: 80%;
+  margin-right: 10px;
 }
 .header .big-header .header__items {
   display: flex;
@@ -156,11 +160,12 @@ html {
     border-radius: 15px;
     border: 0;
     height: 2rem;
-    width: 65px;
+    padding: 0 15px;
     font-size: 1rem;
     color: white;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: nowrap;
   }
   .header .mobile-header__btn a {
     text-decoration: none;
